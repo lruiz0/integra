@@ -1,16 +1,14 @@
 @charset "UTF-8";
 /* -- Estils meus -- */
 
-body { padding: 50px; border-top: solid 1px #fff; background: #fff; color: #004; font: 14px/normal Montserrat, Tahoma, Arial, Helvetica, sans-serif; }
+body { border-top: solid 1px #fff; background: #fff; color: #004; font: 14px/normal Montserrat, Tahoma, Arial, Helvetica, sans-serif; }
 
 div.right-header{float:right;}
 
-div.header{width:674px;}
+div.header{}
 
 div.info{
 
-width:674px;
-margin-top:50px;
 text-align:justify;
 }
 /* -- Fi d'estils meus -- */
