@@ -66,16 +66,17 @@ a.icon{
 }
 .item h2{
     position:absolute;
-    width:147px;
+    width:187px; /* 147 */
     height:52px;
     color:#222;
-    font-size:18px;
+    font-size:18px; /* 18 */
     top:0px;
     left:52px;
     text-indent:10px;
     line-height:52px;
     text-shadow:1px 1px 1px #fff;
     text-transform:uppercase;
+
 }
 .item h2.active{
     color:#fff;
@@ -110,4 +111,3 @@ a.icon{
     -webkit-box-shadow:1px 1px 4px #666;
     box-shadow:1px 1px 4px #666;
 }
-
