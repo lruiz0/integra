@@ -8,12 +8,12 @@ body{
 
 }
 .back {
-    background:transparent url(../../logo/back.png) no-repeat;
+    background:transparent url(../images/Original_transparent_mes_grant.png) no-repeat;
     position:fixed;
-    top: 400px;
+    top: 500px;
     left: 300px;
-    width:450px;
-    height:150px;
+    width: 100%;
+    height:100%;
 
 }
 

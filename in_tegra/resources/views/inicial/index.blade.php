@@ -12,7 +12,6 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="{{ asset('/css/estiloIntegra.css') }}" rel="stylesheet">
     </head>
-
     <body>
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
@@ -35,13 +34,14 @@
                         </div>
                         <button type="submit" class="btn btn-success">Sign in</button>
                         <div class="form-group">
-            <a class="sign-up thickbox" href="{{ route('register') }}">Regístrate</a>
+            <a href="{{ route('register') }}"><button type="button" class="btn btn-info">Regístrate</button></a>
           </div>
                     </form>
                 </div><!--/.navbar-collapse -->
             </div>
         </nav>
         <div id="content">
+            <div class="back"></div>
             <div class="navigation" id="nav">
                 <div class="item user">
                     <img src="images/bg_user.png" alt="" width="199" height="199" class="circle"/>
