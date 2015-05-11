@@ -11,7 +11,13 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', [
+	'as'=> '/', 'uses' => 'WelcomeController@index'
+]);
+
+Route::get('register', [
+    'as' => 'register', 'uses' => 'RegisterController@index'
+]);
 
 Route::get('home', 'HomeController@index');
 

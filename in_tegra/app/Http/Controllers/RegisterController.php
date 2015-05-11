@@ -1,6 +1,6 @@
 <?php namespace App\Http\Controllers;
 
-class WelcomeController extends Controller {
+class RegisterController extends Controller {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -30,7 +30,9 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{
-		//return view('welcome');
-		return view('inicial.index');
+		return view('register.index');
 	}
 }
+
+
+
