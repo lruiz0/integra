@@ -5,7 +5,18 @@
 body{
     font-family:Arial;
     background:#fff url(../images/bg.png) no-repeat top left;
+
 }
+.back {
+    background:transparent url(../../logo/back.png) no-repeat;
+    position:fixed;
+    top: 400px;
+    left: 300px;
+    width:450px;
+    height:150px;
+
+}
+
 .title{
     width:548px;
     height:119px;
