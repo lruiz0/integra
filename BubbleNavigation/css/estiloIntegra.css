@@ -36,5 +36,6 @@ a.back{
     left:0px;
 }
 #content{
-    margin:0 auto;
+    margin:100px auto;
+    /*padding-top: 100px;*/
 }
