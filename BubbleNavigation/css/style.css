@@ -10,23 +10,23 @@
     position:absolute;
 }
 .user{
-    top:125px;
+    top:142px;
     left:110px;
 }
 .home{
-   top:50px;
+   top:60px;
    left:360px;
 }
 .shop{
-   top:90px;
+   top:100px;
    left:625px;
 }
 .camera{
-   top:230px;
+   top:240px;
    left:835px;
 }
 .fav{
-   top:420px;
+   top:430px;
    left:950px;
 }
 
