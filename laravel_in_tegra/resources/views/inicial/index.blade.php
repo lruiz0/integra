@@ -34,7 +34,7 @@
                         </div>
                         <button type="submit" class="btn btn-success">Sign in</button>
                         <div class="form-group">
-                            <a href="{{ route('register') }}"><button type="button" class="btn btn-info">Regístrate</button></a>
+                            <a href="{{ url('/auth/register') }}"><button type="button" class="btn btn-info">Regístrate</button></a>
                         </div>
                     </form>
                 </div><!--/.navbar-collapse -->
