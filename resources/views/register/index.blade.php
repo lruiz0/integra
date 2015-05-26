@@ -40,18 +40,18 @@
         <div class="container">
             <form class="form-group" role="form" method="POST" action="{{ url('/auth/register') }}">
                 <h2 class="form-group-heading">{{ Lang::get('messages.tituloReg') }}</h2>
-                <label for="inputName" class="sr-only">Nombre</label>
-                <input name="name" type="text" id="inputName" class="form-control" placeholder="Nombre" value="{{ old('name') }}" required autofocus><br/>
-                <label for="inputApellidos" class="sr-only">Apellidos</label>
-                <input name="apellidos" type="text" id="inputApellidos" class="form-control" placeholder="Apellidos" value="{{ old('apellidos') }}" required><br/>
-                <label for="inputEmail" class="sr-only">E-mail</label>
-                <input name="email" type="email" id="inputEmail" class="form-control" placeholder="E-mail" value="{{ old('email') }}" required>
-                <label for="inputConfirmEmail" class="sr-only">Confirma E-mail</label>
-                <input name="email_confirmation" type="email" id="inputConfirmEmail" class="form-control" placeholder="Confirma E-mail" required><br/>
-                <label for="inputPassword" class="sr-only">Contraseña</label>
-                <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Contaseña" value="{{ old('password') }}" required>
-                <label for="inputConfirmPassword" class="sr-only">Confirma Contraseña</label>
-                <input name="password_confirmation" type="password" id="inputConfirmPassword" class="form-control" placeholder="Confirma Contaseña" required>
+                <label for="inputName" class="sr-only">{{ Lang::get('messages.nombre') }}</label>
+                <input name="name" type="text" id="inputName" class="form-control" placeholder="{{ Lang::get('messages.nombre') }}" value="{{ old('name') }}" required autofocus><br/>
+                <label for="inputApellidos" class="sr-only">{{ Lang::get('messages.apellidos') }}</label>
+                <input name="apellidos" type="text" id="inputApellidos" class="form-control" placeholder="{{ Lang::get('messages.apellidos') }}" value="{{ old('apellidos') }}" required><br/>
+                <label for="inputEmail" class="sr-only">{{ Lang::get('messages.email') }}</label>
+                <input name="email" type="email" id="inputEmail" class="form-control" placeholder="{{ Lang::get('messages.email') }}" value="{{ old('email') }}" required>
+                <label for="inputConfirmEmail" class="sr-only">{{ Lang::get('messages.confEmail') }}</label>
+                <input name="email_confirmation" type="email" id="inputConfirmEmail" class="form-control" placeholder="{{ Lang::get('messages.confEmail') }}" required><br/>
+                <label for="inputPassword" class="sr-only">{{ Lang::get('messages.password') }}</label>
+                <input name="password" type="password" id="inputPassword" class="form-control" placeholder="{{ Lang::get('messages.password') }}" value="{{ old('password') }}" required>
+                <label for="inputConfirmPassword" class="sr-only">{{ Lang::get('messages.confPassword') }}</label>
+                <input name="password_confirmation" type="password" id="inputConfirmPassword" class="form-control" placeholder="{{ Lang::get('messages.confPassword') }}" required>
                 <h4>Que eres usuario o cuidador?</h4>
                 <label class="radio-inline">
                     <input type="radio" name="tipo" id="Usuari" value="user" required> Usuari
