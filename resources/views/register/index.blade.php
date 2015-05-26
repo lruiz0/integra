@@ -14,7 +14,7 @@
         <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 
         <!-- Bootstrap -->
-        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
 
         <!-- Mis styles for this template ¡está en la carpeta public!-->
         <link href="{{ asset('signin.css') }}" rel="stylesheet">

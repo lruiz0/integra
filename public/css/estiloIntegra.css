@@ -3,19 +3,61 @@
     padding:0;
 }
 body{
-    font-family:Arial;
-    background:#fff url(../images/bg.png) no-repeat top left;
-
+    font-family: 'Poiret One', cursive;
 }
 .back {
-    background:transparent url(../images/Original_transparent_mes_grant.png) no-repeat;
-    position:fixed;
-    top: 500px;
-    left: 300px;
-    width: 100%;
-    height:100%;
-
+    position: fixed;
+    top: 60%;
+    left: 5%;
 }
+.back img{
+    position: static;
+    width:100%;
+    height:100%;
+}
+
+@media screen and (max-width: 768px){
+    .back {
+        position: absolute;
+        top:15px;
+        width: 230px;
+        height: 65px;
+    }
+    .back img{
+        width: 100%;
+        height:100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    body{
+        background-color: #E6F6F5 !important;
+        background: url(../images/new_background.png);
+
+    }
+    footer{
+        display: inline-block;
+        left: 10px !important;
+        margin-left: 40px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .back{
+        position:absolute;
+        top:400px;
+        left:60px;
+        width:700px;
+        height:220px;
+    }
+
+    body{
+    font-family:Arial;
+    background:#F0F8F7 url(../images/new_background.png) no-repeat top left;
+    background-position: -140px 30px;
+
+    }
+}
+
 
 .title{
     width:548px;
@@ -27,7 +69,7 @@ body{
 }
 a.back{
     /*background:transparent url(../back.png) no-repeat top left;*/
-    position:fixed;
+    position:absolute;
     width:150px;
     height:27px;
     outline:none;
@@ -37,4 +79,117 @@ a.back{
 #content{
     margin:100px auto;
     /*padding-top: 100px;*/
+}
+footer{
+    position: fixed;
+    left:88%;
+    top:90%;
+    display: inline-block;
+}
+.icono{
+    display: inline-block;
+}
+footer img{
+    width: 40px;
+    height: 40px;
+}
+.buttonLogin{
+    position:absolute;
+    left:95%;
+    bottom:90%;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.logo_mediano{
+    display:inline;
+    width:250px;
+    height: 80px;
+    top:0;
+    right: 0
+    left:0
+    bottom:0;
+}
+p{  
+    color:#2E3472;
+    display:inline-block;
+    font-size: 27px;
+}
+
+.customAnimated1{
+
+    -webkit-animation-duration: 1s;
+
+}
+.customAnimated2{
+    -webkit-animation-duration: 3s;
+
+}
+.customAnimated3{
+    -webkit-animation-duration: 5s;
+
+}
+
+.customAnimated4{
+    -webkit-animation-duration: 7s;
+
+}
+.customAnimated5{
+    -webkit-animation-duration: 9s;
+
+}
+.menuMovil{
+    position: absolute;
+    margin:auto;
+    text-decoration: none;
+    text-align: center;
+    font-size: 35px;
+    top:0;
+    left:40px;
+    right:40px;
+    bottom:0;
+    list-style: none;
+
+
+}
+.menuMovil a{
+    color:white;
+}
+.menuMovil a:hover{
+    text-decoration: none;
+}
+.menuMovil li{
+    margin-top: 15px;
+    border-radius: 10px;
+    list-style: none;
+
+}
+.menuMovil li:hover{
+    text-decoration: none;
+    opacity:0.7;
+
+}
+.azul{
+    background-color: #32CCC3;
+    
+
+}
+.verde{
+    background-color: #7AD07C;
+    
+}
+.babyBlue{
+    background-color: #80BCF3;
+
+}
+.gris{
+    background-color: #9C9C9C;
+
+}
+.logoli{
+    
+}
+
+.lightGreen{
+    background-color: #A0CBF4;
 }

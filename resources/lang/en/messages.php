@@ -1,5 +1,6 @@
 <?php
 return [
+	'titulo' => 'Integra project'
 	'social' => 'Social',
 	'lenguaje' => 'Language',
 	'logica' => 'Logic',

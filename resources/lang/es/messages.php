@@ -1,5 +1,6 @@
 <?php
 return [
+	'titulo' => 'Proyecto Integra'
 	'social' => 'Social',
 	'lenguaje' => 'Lenguaje',
 	'logica' => 'Lógica',
