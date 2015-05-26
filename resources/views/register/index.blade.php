@@ -8,16 +8,16 @@
         <meta name="description" content="Página de registro">
         <meta name="author" content="Integra corp.">
         <link rel="icon" href="img/logo.png">
-        <title>Registrate</title>
+        <title>{{ Lang::get('messages.tituloReg') }}</title>
 
         <!-- Fonts -->
         <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 
         <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
         <!-- Mis styles for this template ¡está en la carpeta public!-->
-        <link href="signin.css" rel="stylesheet">
+        <link href="{{ asset('signin.css') }}" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,7 +39,7 @@
         @endif
         <div class="container">
             <form class="form-group" role="form" method="POST" action="{{ url('/auth/register') }}">
-                <h2 class="form-group-heading">Porfavor regístrese</h2>
+                <h2 class="form-group-heading">{{ Lang::get('messages.tituloReg') }}</h2>
                 <label for="inputName" class="sr-only">Nombre</label>
                 <input name="name" type="text" id="inputName" class="form-control" placeholder="Nombre" value="{{ old('name') }}" required autofocus><br/>
                 <label for="inputApellidos" class="sr-only">Apellidos</label>
@@ -69,6 +69,6 @@
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     </body>
 </html>

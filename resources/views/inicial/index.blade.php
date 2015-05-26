@@ -9,7 +9,7 @@
         <meta name="keywords" content="jquery, circular menu, navigation, round, bubble"/>
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
 
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
         <link href="{{ asset('/css/estiloIntegra.css') }}" rel="stylesheet">
     </head>
     <body>
@@ -46,22 +46,22 @@
                 <div class="item user">
                     <img src="images/bg_user.png" alt="" width="199" height="199" class="circle"/>
                     <a href="#" class="icon"></a>
-                    <h2>Social</h2>
+                    <h2>{{ Lang::get('messages.social') }}</h2>
                 </div>
                 <div class="item home">
                     <img src="images/bg_home.png" alt="" width="199" height="199" class="circle"/>
                     <a href="#" class="icon"></a>
-                    <h2>Lenguaje</h2>
+                    <h2>{{ Lang::get('messages.lenguaje') }}</h2>
                 </div>
                 <div class="item shop">
                     <img src="images/bg_shop.png" alt="" width="199" height="199" class="circle"/>
                     <a href="#" class="icon"></a>
-                    <h2>Cálculo Lógica</h2>
+                    <h2>{{ Lang::get('messages.logica') }}</h2>
                 </div>
                 <div class="item camera">
                     <img src="images/bg_camera.png" alt="" width="199" height="199" class="circle"/>
                     <a href="#" class="icon"></a>
-                    <h2>Autogestión</h2>
+                    <h2>{{ Lang::get('messages.memoria') }}</h2>
                 </div>
                 <div class="item fav">
                     <img src="images/bg_fav.png" alt="" width="199" height="199" class="circle"/>
@@ -72,7 +72,7 @@
         </div>
         <!-- The JavaScript -->
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script type="text/javascript" src="{{ asset('jquery.easing.1.3.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/jquery.easing.1.3.js') }}"></script>
         <script type="text/javascript">
             $(function() {
                 $('#nav > div').hover(
@@ -108,6 +108,6 @@
         </script>
         <!-- Scripts -->
     
-    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="{{ asset('/js/bootstrap.min.js') }}"></script>
     </body>
 </html>
