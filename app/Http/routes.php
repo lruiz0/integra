@@ -19,7 +19,7 @@ Route::get('register', [
     'as' => 'register', 'uses' => 'RegisterController@index'
 ]);
 
-Route::get('home', 'HomeController@index');
+//Route::get('home', 'HomeController@index');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
@@ -36,8 +36,8 @@ Route::get('menu-memoria', [
     'as' => 'menuMemoria', 'uses' => 'JuegosController@menuMemoria'
 ]);
 
-Route::get('menu-calculo', [
-    'as' => 'menuCalculo', 'uses' => 'JuegosController@menuCalculo'
+Route::get('menu-autogestion', [
+    'as' => 'menuAutogestion', 'uses' => 'JuegosController@menuAutogestion'
 ]);
 
 /* juegos --------------------------------------------------------------------------------------------------------------*/
@@ -54,6 +54,6 @@ Route::get('memory', [
     'as' => 'jMemoriaMemory', 'uses' => 'JuegosController@memory'
 ]);
 
-Route::get('calculo', [
-    'as' => 'jCalculo', 'uses' => 'JuegosController@calculo'
+Route::get('autogestion', [
+    'as' => 'jAutogestion', 'uses' => 'JuegosController@autogestion'
 ]);

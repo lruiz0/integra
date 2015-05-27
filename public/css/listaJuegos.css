@@ -1,0 +1,62 @@
+.mediaGame img{
+	height: 100%;
+	width: 100%;
+	border: 3px #27D3E2 solid;
+
+}
+.mediaGame img:hover{
+	border: 4px #A5D414 dotted;
+	
+
+}
+.mediaGame{
+
+	margin-top: 50px;
+
+}
+.mediaGame p{
+	font-size: 13px;
+	margin: auto;
+	text-align: left;
+	display: inline;
+}
+.mediaGame h3{
+	color:#85AC0E;
+	font-family: 'Poiret One', cursive;
+	margin: auto;
+	
+}
+header h1{
+
+	color:#0CBAD9;
+	font-size: 60px !important;
+	text-align: center;
+}
+header img{
+	display: inline-block;
+}
+header{
+	font-family: 'Poiret One', cursive;
+	
+}
+hr{
+	color:#9ACC3A;
+}
+footer{
+		font-size: 30px;
+		
+}
+footer span, img{
+	display: inline-block;
+
+
+}
+footer a{
+	position: relative;
+	font-family: 'Poiret One', cursive;
+}
+footer a:hover{
+	text-decoration: none;
+	color:#90C11C;
+}
+

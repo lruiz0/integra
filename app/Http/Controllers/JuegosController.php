@@ -39,9 +39,9 @@ class JuegosController extends Controller {
         return view('menus-juegos.memoria');
     }
 
-    public function menuCalculo()
+    public function menuAutogestion()
     {
-        return view('menus-juegos.calculo');
+        return view('menus-juegos.autogestion');
     }
 
 /* juegos -------------------------------------------------------------------------------------------------------*/
@@ -60,8 +60,8 @@ class JuegosController extends Controller {
         return view('juegos.memory');
     }
 
-    public function calculo()
+    public function autogestion()
     {
-        return view('juegos.calculo');
+        return view('juegos.autogestion');
     }
 }

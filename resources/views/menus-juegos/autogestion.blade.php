@@ -34,7 +34,7 @@
             <div class="mediaGame col-xs-12 col-sm-4 col-md-4 col-lg-4">
                 <div class="row">
                     <div class="col-md-7 col-lg-8">
-                        <a href="{{ route('jSocial') }}">
+                        <a href="{{ route('jAutogestion') }}">
                           <img  src="images/niña1.jpeg" alt="..." >
                         </a>
                     </div>

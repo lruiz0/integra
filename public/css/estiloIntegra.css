@@ -43,6 +43,11 @@ body{
         padding: 60px;
         font-size: 19px;
     }
+    .volver{
+        position: relative;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px){
