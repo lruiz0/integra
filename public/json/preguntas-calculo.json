@@ -1,0 +1,49 @@
+{
+    "preguntas" : [
+        {
+            "enunciado" : "Pon en la caja 175 euros",
+            "valor"     : 175
+        },
+        {
+            "enunciado" : "Pon en la caja 200 euros",
+            "valor"     : 200
+        },
+        {
+            "enunciado" : "Pon en la caja 10 euros con 55 centimos",
+            "valor"     : 10.55
+        },
+        {
+            "enunciado" : "Pon en la caja 75 centimos",
+            "valor"     : 0.75
+        },
+        {
+            "enunciado" : "Pon en la caja 1 euro con 33 centimos",
+            "valor"     : 1.33
+        },
+        {
+            "enunciado" : "Pon en la caja 5,75",
+            "valor"     : 5.75
+        },
+        {
+            "enunciado" : "Pon en la caja 7,80",
+            "valor"     : 7.80
+        },
+        {
+            "enunciado" : "Pon en la caja 1223 euros",
+            "valor"     : 1223
+        },
+        {
+            "enunciado" : "Pon en la caja 199 euros con 99 centimos",
+            "valor"     : 199.99
+        },
+        {
+            "enunciado" : "Pon en la caja 105",
+            "valor"     : 105
+        },
+        {
+            "enunciado" : "Pon en la caja 423 euros con 56 centimos",
+            "valor"     : 423.56
+        }
+
+    ]
+}

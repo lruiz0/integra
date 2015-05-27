@@ -1,7 +1,7 @@
 <?php
 return [
 	'titulo' => 'Integra project',
-	'social' => 'Social',
+	'menus-juegos' => 'Social',
 	'lenguaje' => 'Language',
 	'logica' => 'Logic',
 	'memoria' => 'Memory',

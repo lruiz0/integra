@@ -1,0 +1,44 @@
+{
+    "preguntas" : [
+        {
+            "enunciado" : "¿Cuál de estas definiciones es la más próxima a 'empatia'?",
+		    "a":"Salirse de si mismo.",
+		    "b":"Estar desmotivado, triste, sin ganas de hacer nada.",
+		    "c":"Ponerse en el lugar del otro.",
+		    "d":"Ser simpático con los demás.",
+            "valor"     : "c"
+        },
+        {
+            "enunciado" : "¿Cuál de estas definiciones es la más próxima a 'apatia'?",
+		    "a":"Tener muchas ganas de jugar al juego de las sillas.",
+		    "b":"No tener ganas de hacer nada.",
+		    "c":"Estar enfadado con alguien.",
+		    "d":"Lo contrario de simpatia",
+            "valor"     : "b"
+        },
+	{	
+            "enunciado" : "¿Que haces si ves a un compañero triste?",
+		    "a":"Le vas a preguntar que le pasa.",
+		    "b":"No le dices nada hasta que lo ves contento.",
+		    "c":"Le dices a otro que le vaya a preguntar que le pasa.",
+		    "d":"Le preguntas si quiere un helado.",
+            "valor"     : "a"
+        },
+	{
+            "enunciado" : "¿Que haces cuando llega un compañero nuevo?",
+		    "a":"Procuras no hablar de nada con él.",
+		    "b":"Te pones a pensar en de dónde debe venir.",
+		    "c":"Le dices a otro que le vaya a preguntar cómo se llama.",
+		    "d":"Te presentas y le preguntas cómo se llama.",
+            "valor"     : "d"
+        },
+	{
+            "enunciado" : "¿Cómo reaccionas si se te cuelan en la cola del cine?",
+		    "a":"Voy directo a pegarle una colleja al colón que se me ha colado.",
+		    "b":"Hago lo mismo pero justo delante de él.",
+		    "c":"Le digo amablemente, perdona me parece que hay una cola.",
+		    "d":"No digo nada y me voy a casa enfadado y no vuelvo a ese cine.",
+            "valor"     : "c"
+        }
+    ]
+}
