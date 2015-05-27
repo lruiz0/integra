@@ -1,7 +1,7 @@
 <?php
 return [
 	'titulo' => 'Proyecto Integra',
-	'social' => 'Social',
+	'menus-juegos' => 'Social',
 	'lenguaje' => 'Lenguaje',
 	'logica' => 'Lógica',
 	'memoria' => 'Memoria',

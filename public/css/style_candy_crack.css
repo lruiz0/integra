@@ -1,0 +1,10 @@
+body {
+    background: url("../img/new_background.png") no-repeat;
+}
+
+aside h1 {
+
+    font-size: 2em;
+
+    font-family: sans-serif;
+}

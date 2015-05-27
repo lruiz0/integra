@@ -75,7 +75,7 @@
             <div class="navigation hidden-xs" id="nav">
                 <div class="item user animated fadeIn customAnimated1">
                     <img src="images/bg_user.png" alt="" width="199" height="199" class="circle"/>
-                    <a href="#" class="icon"></a>
+                    <a href="{{ route('menuSocial') }}" class="icon"></a>
                     <h2>Social</h2>
                 </div>
                 <div class="item home animated fadeIn customAnimated2">
@@ -85,12 +85,12 @@
                 </div>
                 <div class="item shop animated fadeIn customAnimated3">
                     <img src="images/bg_shop.png" alt="" width="199" height="199" class="circle"/>
-                    <a href="#" class="icon"></a>
-                    <h2>Cálculo/Lógica</h2>
+                    <a href="{{ route('menuMemoria') }}" class="icon"></a>
+                    <h2>Memoria</h2>
                 </div>
                 <div class="item camera animated fadeIn customAnimated4">
                     <img src="images/bg_camera.png" alt="" width="199" height="199" class="circle"/>
-                    <a href="#" class="icon"></a>
+                    <a href="{{ route('menuCalculo') }}" class="icon"></a>
                     <h2>Autogestión</h2>
                 </div>
                 <div class="item fav animated fadeIn customAnimated5">

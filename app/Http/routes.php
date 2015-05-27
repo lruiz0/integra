@@ -25,3 +25,35 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+/* menus --------------------------------------------------------------------------------------------------------------*/
+
+Route::get('menu-social', [
+    'as' => 'menuSocial', 'uses' => 'JuegosController@menuSocial'
+]);
+
+Route::get('menu-memoria', [
+    'as' => 'menuMemoria', 'uses' => 'JuegosController@menuMemoria'
+]);
+
+Route::get('menu-calculo', [
+    'as' => 'menuCalculo', 'uses' => 'JuegosController@menuCalculo'
+]);
+
+/* juegos --------------------------------------------------------------------------------------------------------------*/
+
+Route::get('preguntas-social', [
+    'as' => 'jSocial', 'uses' => 'JuegosController@preguntasSocial'
+]);
+
+Route::get('candy-crack', [
+    'as' => 'jMemoriaCandyCrack', 'uses' => 'JuegosController@candyCrack'
+]);
+
+Route::get('memory', [
+    'as' => 'jMemoriaMemory', 'uses' => 'JuegosController@memory'
+]);
+
+Route::get('calculo', [
+    'as' => 'jCalculo', 'uses' => 'JuegosController@calculo'
+]);
