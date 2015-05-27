@@ -39,16 +39,16 @@ a.icon{
     cursor:pointer;
 }
 .user a.icon{
-    background:transparent url(../images/user.png) no-repeat 0px 0px;
+    background:transparent url(../images/social.png) no-repeat 0px 0px;
 }
 .home a.icon{
-    background:transparent url(../images/home.png) no-repeat 0px 0px;
+    background:transparent url(../images/idioma_claro.png) no-repeat 0px 0px;
 }
 .shop a.icon{
-    background:transparent url(../images/shop.png) no-repeat 0px 0px;
+    background:transparent url(../images/calculo.png) no-repeat 0px 0px;
 }
 .camera a.icon{
-    background:transparent url(../images/camera.png) no-repeat 0px 0px;
+    background:transparent url(../images/cerdito_claro.png) no-repeat 0px 0px;
 }
 .fav a.icon{
     background:transparent url(../images/fav.png) no-repeat 0px 0px;
