@@ -12,12 +12,13 @@
 
         <!-- Fonts -->
         <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
         <!-- Bootstrap -->
         <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
 
         <!-- Mis styles for this template ¡está en la carpeta public!-->
-        <link href="{{ asset('signin.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/estiloIntegra.css') }}" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,35 +38,54 @@
                 </ul>
             </div>
         @endif
-        <div class="container">
-            <form class="form-group" role="form" method="POST" action="{{ url('/auth/register') }}">
-                <h2 class="form-group-heading">{{ Lang::get('messages.tituloReg') }}</h2>
-                <label for="inputName" class="sr-only">{{ Lang::get('messages.nombre') }}</label>
-                <input name="name" type="text" id="inputName" class="form-control" placeholder="{{ Lang::get('messages.nombre') }}" value="{{ old('name') }}" required autofocus><br/>
-                <label for="inputApellidos" class="sr-only">{{ Lang::get('messages.apellidos') }}</label>
-                <input name="apellidos" type="text" id="inputApellidos" class="form-control" placeholder="{{ Lang::get('messages.apellidos') }}" value="{{ old('apellidos') }}" required><br/>
-                <label for="inputEmail" class="sr-only">{{ Lang::get('messages.email') }}</label>
-                <input name="email" type="email" id="inputEmail" class="form-control" placeholder="{{ Lang::get('messages.email') }}" value="{{ old('email') }}" required>
-                <label for="inputConfirmEmail" class="sr-only">{{ Lang::get('messages.confEmail') }}</label>
-                <input name="email_confirmation" type="email" id="inputConfirmEmail" class="form-control" placeholder="{{ Lang::get('messages.confEmail') }}" required><br/>
-                <label for="inputPassword" class="sr-only">{{ Lang::get('messages.password') }}</label>
-                <input name="password" type="password" id="inputPassword" class="form-control" placeholder="{{ Lang::get('messages.password') }}" value="{{ old('password') }}" required>
-                <label for="inputConfirmPassword" class="sr-only">{{ Lang::get('messages.confPassword') }}</label>
-                <input name="password_confirmation" type="password" id="inputConfirmPassword" class="form-control" placeholder="{{ Lang::get('messages.confPassword') }}" required>
-                <h4>Que eres usuario o cuidador?</h4>
-                <label class="radio-inline">
-                    <input type="radio" name="tipo" id="Usuari" value="user" required> Usuari
-                </label>
-                <label class="radio-inline">
-                    <input type="radio" name="tipo" id="Cuidador" value="cuidador" required> Cuidador
-                </label><br/>
-                <label for="exampleInputFile">Quieres subir una foto?</label>
-                <input name="foto" type="file" id="exampleInputFile">
-                <p class="help-block">Para subir una foto de perfil haz click en browse.</p>
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Regístrame</button>
-                <a href="{{ route('/') }}" class="btn btn-block">Vuelve al índice.</a>
+        <div class="formBack">
+            <form action="">
+                <div class="form_header"><img class="logo_mediano"src="images/nuevo_logo.png"> <h2 class="form-group-heading">¡Registrate!</h2> </div>
+                <div class="form-group">
+                    <label for="inputName">Nombre</label>
+                    <input type="text" id="inputName" class="form-control input-lg" placeholder="Nombre" required autofocus><br/>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputApellidos">Apellidos</label>
+                    <input type="text" id="inputApellidos" class="form-control input-lg" placeholder="Apellidos" required><br/>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputEmail">E-mail</label>
+                    <input type="email" id="inputEmail" class="form-control input-lg" placeholder="E-mail" required>
+                </div>
+
+                <div class="form-group">
+                     <label for="inputPassword">Contraseña</label>
+                    <input type="password" id="inputPassword" class="form-control input-lg" placeholder="Contaseña" required>
+                </div>
+
+                <div class="form-group">
+                    <h3>¿Eres usuario o cuidador?</h3>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="Usuari" value="user" required> Usuari
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="Cuidador" value="cuidador" required> Cuidador
+                    </label><br/>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFile">Quieres subir una foto?</label>
+                    <input type="file" id="exampleInputFile">
+                    <p class="help-block">Para subir una foto de perfil haz click en browse.</p>
+                </div>
+                 <div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="...">
+                    <div class="btn-group" role="group">
+                        <button class="btn btn-lg btn-primary botonRegistro " type="submit">Registrame</button>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button class="btn btn-lg btn-primary botonRegistro " onclick="window.location='{{ route('/') }}'" type="submit">Volver</button>
+                    </div>
+
+                 </div>
             </form>
-        </div> <!-- /container -->
+        </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->

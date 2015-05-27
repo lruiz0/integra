@@ -4,6 +4,9 @@
 }
 body{
     font-family: 'Poiret One', cursive;
+    background: url(../images/new_background.png) no-repeat;
+    background-color: white;
+
 }
 .back {
     position: fixed;
@@ -29,19 +32,20 @@ body{
         max-width: 100%;
         min-width: 100%;
     }
-    body{
-        background-color: #E6F6F5 !important;
-        background: url(../images/new_background.png);
 
-    }
     footer{
         display: inline-block;
         left: 10px !important;
         margin-left: 40px;
     }
+
+    .formBack{
+        padding: 60px;
+        font-size: 19px;
+    }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 1200px){
     .back{
         position:absolute;
         top:400px;
@@ -51,9 +55,21 @@ body{
     }
 
     body{
-    font-family:Arial;
-    background:#F0F8F7 url(../images/new_background.png) no-repeat top left;
     background-position: -140px 30px;
+
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .back{
+        position:absolute;
+        top:600px;
+        left:60px;
+        width:825px;
+        height:280px;
+    }
+    body{
+    background-position: -140px 90px;
 
     }
 }
@@ -192,4 +208,57 @@ p{
 
 .lightGreen{
     background-color: #A0CBF4;
+}
+
+.formBack{
+    background-color: transparent;
+    border: 6px #4FC6D8 dotted;
+    width: 550px;
+    height: 865px;
+    margin:auto;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 30px;
+    padding-top: 15px;
+    color:#09BCE9;
+    font-size: 20px;
+}
+
+.botonRegistro{
+    background-color: #0FCBFA;
+    color:white;
+    font-weight: bold;
+    border:1px #14B2C9 solid;
+    
+}
+.formBack input{
+    background-color: white;
+    color:#91B919;
+    font-weight: bold;
+    border:1px #81D9E6 solid;
+}
+
+.botonRegistro:hover{
+    background-color: #A2D746;
+    font-weight: bolder;
+    border-color: #16DCE3;
+}
+
+.formBack h2, h3{
+    color:#92D41F !important;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+}
+.form_header img, h2{
+    display: inline-block;
+}
+.formBack h2{
+    font-size: 40px;
+    top: 60px;
+}
+
+#loginButton{
+    left: 20%;
+    right: 20%;
+    margin-top: 35px;
 }

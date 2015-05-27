@@ -1,0 +1,43 @@
+body {
+  padding-top: 10px;
+  padding-bottom: 40px;
+  background-color: #eef;
+}
+
+.form-group {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-group .form-group-heading,
+.form-group .checkbox {
+  margin-bottom: 10px;
+}
+.form-group .checkbox {
+  font-weight: normal;
+}
+.form-group .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-group .form-control:focus {
+  z-index: 2;
+}
+.form-group input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-group input[type="password"] {
+  margin-bottom: 0px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.form-group label[for="exampleInputFile"]{
+  margin-top: 10px;
+}
