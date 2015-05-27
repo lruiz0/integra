@@ -65,7 +65,7 @@
 
                      <div class="modal-footer">
                         si no estas registrado registrate!
-                        <button type="button" class="btn btn-primary">Registrarse</button>
+                        <a href="{{ route('register') }}"><button type="button" class="btn btn-primary">Registrarse</button></a>
                     </div>
                   
                   </div>
