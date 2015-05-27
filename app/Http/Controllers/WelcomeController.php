@@ -33,4 +33,5 @@ class WelcomeController extends Controller {
 		//return view('welcome');
 		return view('inicial.index');
 	}
+
 }
