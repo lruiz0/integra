@@ -35,11 +35,11 @@
                 <div class="row">
                     <div class="col-md-7 col-lg-8">
                         <a href="{{ route('jSocial') }}">
-                          <img  src="images/niña1.jpeg" alt="..." >
+                          <img  src="images/foto-social.png" alt="..." >
                         </a>
                     </div>
                     <div class=" col-md-5 col-lg-4">
-                        <h3 >Juego del supermercado</h3>
+                        <h3 >Preguntas de habilidad social</h3>
                         <p>¡Haz la compra en el super siguiendo la lista sin equivocarte! </p>
                     </div>
                 </div>

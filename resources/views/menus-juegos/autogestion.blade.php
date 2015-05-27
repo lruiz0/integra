@@ -24,7 +24,7 @@
 
 <body>
     <div class="container-fluid">
-        <header><h1>Juegos de habilidad Social</h1></header>
+        <header><h1>Juegos de Autogestión</h1></header>
     </div>
     <hr size="7" align="center"/>
 
@@ -35,12 +35,12 @@
                 <div class="row">
                     <div class="col-md-7 col-lg-8">
                         <a href="{{ route('jAutogestion') }}">
-                          <img  src="images/niña1.jpeg" alt="..." >
+                          <img  src="images/deCompras.png" alt="..." >
                         </a>
                     </div>
                     <div class=" col-md-5 col-lg-4">
-                        <h3 >Juego del supermercado</h3>
-                        <p>¡Haz la compra en el super siguiendo la lista sin equivocarte! </p>
+                        <h3 >Gestión de dinero</h3>
+                        <p>¡Aprende a manejar monedas y billetes de forma fácil y sencilla! </p>
                     </div>
                 </div>
             </div>

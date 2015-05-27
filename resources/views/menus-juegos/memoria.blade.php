@@ -35,12 +35,12 @@
                 <div class="row">
                     <div class="col-md-7 col-lg-8">
                         <a href="{{ route('jMemoriaCandyCrack') }}">
-                          <img  src="images/niña1.jpeg" alt="..." >
+                          <img  src="images/candyCrack.png" alt="..." >
                         </a>
                     </div>
                     <div class=" col-md-5 col-lg-4">
-                        <h3 >Juego del supermercado</h3>
-                        <p>¡Haz la compra en el super siguiendo la lista sin equivocarte! </p>
+                        <h3 >Candy Crack</h3>
+                        <p>¡Une las casillas del mismo color y consigue puntos! </p>
                     </div>
                 </div>
             </div>
@@ -51,12 +51,12 @@
                 <div class="row">
                     <div class="col-md-7 col-lg-8">
                         <a href="{{ route('jMemoriaMemory') }}">
-                          <img  src="images/niña1.jpeg" alt="..." >
+                          <img  src="images/memoria.png" alt="..." >
                         </a>
                     </div>
                     <div class=" col-md-5 col-lg-4">
-                        <h3>Juego del supermercado</h3>
-                        <p>¡Haz la compra en el super siguiendo la lista sin equivocarte! </p>
+                        <h3>Memory</h3>
+                        <p>¡Encuentra los paneles del mismo color! </p>
                     </div>
                 </div>
             </div>
