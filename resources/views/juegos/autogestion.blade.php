@@ -21,7 +21,7 @@
 
         <div class="optimalsort-task">
             <div class="task-header">
-                <a href="{{ route('menuAutogestion') }}" class="os-logo" data-target="#aboutModal" data-toggle="modal"><img alt="Logo-optimalsort-black" src="{{asset('images/nuevo_logo.png')}}" width="256"/></a>
+                <a href="{{ route('menuAutogestion') }}" class="os-logo"><img alt="Logo-optimalsort-black" src="{{asset('images/nuevo_logo.png')}}" width="256"/></a>
                 <div id="contenedorDeBtn">
                     <button type="button" class="btn btn-info" onclick="calcularResultado()" data-toggle="modal" data-target=".bs-example-modal-sm">He Terminado</button>
                     <button type="button" class="btn btn-danger" onclick="borrar()" >Rectificar</button>
@@ -31,8 +31,14 @@
             </div>
             <div class="clear clearfix"></div>
         </div>
-        <div id="hucha" class="droptarget" ></div>
-        <div id="cajaDestino" class="droptarget" onmouseout="cargarDinero()"></div>
+        <div class="container-fluid">
+             <div class="row center-block">
+                <div id="hucha" class="droptarget col-md-6 col-sm-6 col-xs-6 col-lg-6" ></div>
+                <div id="cajaDestino" class="droptarget col-lg-6 col-md-6 col-sm-6 col-xs-6" onmouseout="cargarDinero()"></div>
+            </div>
+        </div>
+       
+        
         <p id="demo"></p>
         <div class="clear clearfix"></div>
 
