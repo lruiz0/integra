@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Social</title>
+    <title>Lenguaje</title>
     <link rel="icon" href="{{ asset('images/favicon.bmp') }}"/>
 
     <link rel="stylesheet" href="{{ asset('css/estilo_de_prueba.css') }}"/>
@@ -20,8 +20,8 @@
         var res;
         function cargarPreguntas() {
             $('#resultado').children(':first').text('');
-            $.getJSON("{{ asset('json/preguntas-social.json') }}", function(result) {
-                var nroPreg = Math.round(Math.random()*4 );
+            $.getJSON("{{ asset('json/preguntas-lenguaje.json') }}", function(result) {
+                var nroPreg = Math.round(Math.random()*8 );
                 var obj = result['preguntas'][nroPreg];
                 res = obj.valor;
                 $("#preguntas").text(obj.enunciado);
@@ -86,7 +86,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="¨{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="¨{{ asset('js/bootstrap.min.js')}}"></script>
 
 
 </body>

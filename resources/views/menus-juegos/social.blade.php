@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Proyecto Integra</title>
+    <title>Integra</title>
     <meta name="description" content="Awesome Bubble Navigation with jQuery" />
     <meta name="keywords" content="jquery, circular menu, navigation, round, bubble"/>
 

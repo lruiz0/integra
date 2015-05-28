@@ -1,0 +1,76 @@
+{
+    "preguntas" : [
+        {
+            "enunciado" : "Cuál de estas palabras no tiene relación con las demás?",
+		    "a":"Gato",
+		    "b":"Perro",
+		    "c":"Árbol",
+		    "d":"Loro",
+            "valor"     : "c"
+        },
+        {
+            "enunciado" : "Cuál de estas palabras no tiene relación con las demás?",
+		    "a":"Mesa",
+		    "b":"Farola",
+		    "c":"Silla",
+		    "d":"Sofá",
+            "valor"     : "b"
+        },
+	{	
+            "enunciado" : "Cuál de estas palabras no tiene relación con las demás?",
+		    "a":"Piedra",
+		    "b":"Litera",
+		    "c":"Cojín",
+		    "d":"Armario",
+            "valor"     : "a"
+        },
+	{
+            "enunciado" : "Cuál de estas palabras no tiene relación con las demás?",
+		    "a":"Banco",
+		    "b":"Farola",
+		    "c":"Acera",
+		    "d":"Candelabro",
+            "valor"     : "d"
+        },
+	{
+            "enunciado" : "Cuál de estas palabras no tiene relación con las demás?",
+		    "a":"Zapato",
+		    "b":"Cazadora",
+		    "c":"Linterna",
+		    "d":"Camisa",
+            "valor"     : "c"
+        },
+	{
+            "enunciado" : "Cuál de estas palabras no tiene relación con las demás?",
+		    "a":"Camiseta",
+		    "b":"Telefono",
+		    "c":"Gorra",
+		    "d":"Pantalón",
+            "valor"     : "b"
+        },
+	{
+            "enunciado" : "Cuál de estas palabras tiene el significado más próximo a 'perplejo'?",
+		    "a":"Confuso",
+		    "b":"Interesado",
+		    "c":"Trivial",
+		    "d":"Ordinario",
+            "valor"     : "a"
+        },
+	{
+            "enunciado" : "Cuál de estas palabras tiene el significado más próximo a 'infeliz'?",
+		    "a":"Lágrimas",
+		    "b":"Enfadado",
+		    "c":"Desagradable",
+		    "d":"Triste",
+            "valor"     : "d"
+        },
+	{
+            "enunciado" : "Cuál de estas palabras no tiene relación con las demás?",
+		    "a":"Uva",
+		    "b":"Manzana",
+		    "c":"Patata",
+		    "d":"Naranja",
+            "valor"     : "c"
+        }
+    ]
+}

@@ -1,26 +1,30 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <meta name="description" content="Página de registro">
-        <meta name="author" content="Integra corp.">
-        <link rel="icon" href="img/logo.png">
-        <title>{{ Lang::get('messages.tituloReg') }}</title>
+        <meta name="description" content="Página de registro"/>
+        <meta name="author" content="Integra corp."/>
+        <link rel="icon" href="img/logo.png"/>
+        <title>Integra</title>
 
         <!-- Fonts -->
+<<<<<<< HEAD
         <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'> 
+=======
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'/>
+>>>>>>> ca86893a805224d52f0826b140e3f2f41dfb88fc
         <!-- Bootstrap -->
         <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
-
         <!-- Mis styles for this template ¡está en la carpeta public!-->
         <link href="{{ asset('css/estiloIntegra.css') }}" rel="stylesheet">
-
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -76,7 +80,7 @@
                     <input type="file" id="exampleInputFile">
                     <p class="help-block">Para subir una foto de perfil haz click en browse.</p>
                 </div>
-                 <div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="...">
+                <div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="...">
                     <div class="btn-group" role="group">
                         <button class="btn btn-lg btn-primary botonRegistro " type="submit">Registrame</button>
                     </div>
@@ -84,7 +88,7 @@
                         <button class="btn btn-lg btn-primary botonRegistro " onclick="window.location='{{ route('/') }}'" type="submit">Volver</button>
                     </div>
 
-                 </div>
+                </div>
             </form>
         </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
