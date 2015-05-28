@@ -34,6 +34,11 @@ class JuegosController extends Controller {
         return view('menus-juegos.social');
     }
 
+    public function menuLenguaje()
+    {
+        return view('menus-juegos.lenguaje');
+    }
+
     public function menuMemoria()
     {
         return view('menus-juegos.memoria');
@@ -48,6 +53,11 @@ class JuegosController extends Controller {
     public function preguntasSocial()
     {
         return view('juegos.preguntas-social');
+    }
+
+    public function preguntasLenguaje()
+    {
+        return view('juegos.preguntas-lenguaje');
     }
 
     public function candyCrack()

@@ -32,6 +32,10 @@ Route::get('menu-social', [
     'as' => 'menuSocial', 'uses' => 'JuegosController@menuSocial'
 ]);
 
+Route::get('menu-lenguaje', [
+    'as' => 'menuLenguaje', 'uses' => 'JuegosController@menuLenguaje'
+]);
+
 Route::get('menu-memoria', [
     'as' => 'menuMemoria', 'uses' => 'JuegosController@menuMemoria'
 ]);
@@ -44,6 +48,10 @@ Route::get('menu-autogestion', [
 
 Route::get('preguntas-social', [
     'as' => 'jSocial', 'uses' => 'JuegosController@preguntasSocial'
+]);
+
+Route::get('preguntas-lenguaje', [
+    'as' => 'jLenguaje', 'uses' => 'JuegosController@preguntasLenguaje'
 ]);
 
 Route::get('candy-crack', [
