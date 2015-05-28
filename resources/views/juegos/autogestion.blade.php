@@ -16,12 +16,12 @@
     <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'> 
 
 
-    </head>
+</head>
     <body onload="cargarDinero(), cargarPreguntas()">
 
         <div class="optimalsort-task">
             <div class="task-header">
-                <a href="{{ route('menuAutogestion') }}" class="os-logo" data-target="#aboutModal" data-toggle="modal"><img alt="Logo-optimalsort-black" src="{{asset('images/nuevo_logo.png')}}" width="256"/></a>
+                <a href="{{ route('menuAutogestion') }}" class="os-logo" ><img alt="Logo-optimalsort-black" src="{{asset('images/nuevo_logo.png')}}" width="256"/></a>
                 <div id="contenedorDeBtn">
                     <button type="button" class="btn btn-info" onclick="calcularResultado()" data-toggle="modal" data-target=".bs-example-modal-sm">He Terminado</button>
                     <button type="button" class="btn btn-danger" onclick="borrar()" >Rectificar</button>
@@ -35,8 +35,8 @@
         <div id="cajaDestino" class="droptarget" onmouseout="cargarDinero()"></div>
         <p id="demo"></p>
         <div class="clear clearfix"></div>
-
     </div>
+
 
 
     <script src="{{asset('js/jquery-1.11.3.min.js')}}"></script>
