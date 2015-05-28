@@ -19,7 +19,7 @@
     <body>
         <div class="container-fluid">
             <header>
-                <h1>Juegos de habilidad Social</h1>
+                <h1>Juegos de habilidad lingüística</h1>
             </header>
         </div>
         <hr size="7" align="center"/>
@@ -112,5 +112,17 @@
         </footer>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
         <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script>
+        $('.volver').hover(
+                function(){
+                // $(".volver").addClass("volver animated flipInX");
+                    $(".volver a").html("<span class='glyphicon glyphicon-arrow-left' aria-hidden='true'></span> Volver");
+                },
+                function(){
+                    //$(".volver").removeClass( "volver animated flipInX" );
+                    $(".volver a").html("<span class='glyphicon glyphicon-home' aria-hidden='true'></span> Volver");
+                }
+            )
+        </script>
     </body>
 </html>

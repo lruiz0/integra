@@ -33,12 +33,10 @@
         </div>
         <div class="container-fluid">
              <div class="row center-block">
-                <div id="hucha" class="droptarget col-md-6 col-sm-6 col-xs-6 col-lg-6" ></div>
-                <div id="cajaDestino" class="droptarget col-lg-6 col-md-6 col-sm-6 col-xs-6" onmouseout="cargarDinero()"></div>
+                <div id="hucha" class="droptarget" ></div>
+                <div id="cajaDestino" class="droptarget" onmouseout="cargarDinero()"></div>
             </div>
         </div>
-       
-        
         <p id="demo"></p>
         <div class="clear clearfix"></div>
 
@@ -68,7 +66,6 @@
 
 
         }
-
 
         function cargarPreguntas() {
             $.getJSON("{{ asset('json/preguntas-calculo.json') }}", function(result) {

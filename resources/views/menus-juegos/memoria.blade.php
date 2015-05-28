@@ -44,9 +44,6 @@
                     </div>
                 </div>
             </div>
-
-      
-
             <div class="mediaGame col-xs-12 col-sm-4 col-md-4 col-lg-4">
                 <div class="row">
                     <div class="col-md-7 col-lg-8">
@@ -61,8 +58,6 @@
                 </div>
             </div>
 
-
-
             <div class="mediaGame col-xs-12 col-sm-4 col-md-4 col-lg-4">
                 <div class="row">
                     <div class="col-md-7 col-lg-8">
@@ -124,77 +119,6 @@
 
 
         </div>
-
-            <!--
-            <div class="media mediaGame col-md-4 col-lg-4">
-                    <div class="media-left">
-                        <a href="#">
-                          <img class="media-object" src="images/niña1.jpeg" alt="...">
-                        </a>
-                    </div>
-                <div class="media-body">
-                <h2 class="media-heading">Juego del supermercado</h2>
-                    <p>¡Haz la compra en el supero siguiendo la lista sin equivocarte! </p>
-                </div>
-            </div>
-
-            <div class="media mediaGame col-md-4 col-lg-4">
-                    <div class="media-left">
-                        <a href="#">
-                          <img class="media-object" src="images/niña1.jpeg" alt="...">
-                        </a>
-                    </div>
-                <div class="media-body">
-                <h2 class="media-heading">Juego del supermercado</h2>
-                    <p>¡Haz la compra en el supero siguiendo la lista sin equivocarte! </p>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-        <div class="row">
-            <div class="media mediaGame col-md-4 col-lg-4">
-                    <div class="media-left">
-                        <a href="#">
-                          <img class="media-object" src="images/niña1.jpeg" alt="...">
-                        </a>
-                    </div>
-                <div class="media-body">
-                <h2 class="media-heading">Juego del supermercado</h2>
-                    <p>¡Haz la compra en el supero siguiendo la lista sin equivocarte! (En construccion)</p>
-                </div>
-            </div>
-
-            <div class="media mediaGame col-md-4 col-lg-4">
-                    <div class="media-left">
-                        <a href="#">
-                          <img class="media-object" src="images/niña1.jpeg" alt="...">
-                        </a>
-                    </div>
-                <div class="media-body">
-                <h2 class="media-heading">Juego del supermercado</h2>
-                    <p>¡Haz la compra en el supero siguiendo la lista sin equivocarte! </p>
-                </div>
-            </div>
-
-            <div class="media mediaGame col-md-4 col-lg-4">
-                    <div class="media-left">
-                        <a href="#">
-                          <img class="media-object" src="images/niña1.jpeg" alt="...">
-                        </a>
-                    </div>
-                <div class="media-body">
-                <h2 class="media-heading">Juego del supermercado</h2>
-                    <p>¡Haz la compra en el supero siguiendo la lista sin equivocarte! </p>
-                </div>
-            </div>
-        </div>
-    
-        -->
-
 
     </div>  <!-- fin de la seccion del content principal-->
      
