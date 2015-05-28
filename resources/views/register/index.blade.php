@@ -44,42 +44,44 @@
             </div>
         @endif
         <div class="formBack">
-            <form action="">
+            <form role="form" method="POST" action="{{ url('/auth/register') }}">
+
                 <div class="form_header"><img class="logo_mediano"src="images/nuevo_logo.png"> <h2 class="form-group-heading">¡Registrate!</h2> </div>
                 <div class="form-group">
                     <label for="inputName">Nombre</label>
-                    <input type="text" id="inputName" class="form-control input-lg" placeholder="Nombre" required autofocus><br/>
+                    <input name="name" type="text" id="inputName" class="form-control input-lg" placeholder="Nombre" required autofocus><br/>
                 </div>
 
                 <div class="form-group">
                     <label for="inputApellidos">Apellidos</label>
-                    <input type="text" id="inputApellidos" class="form-control input-lg" placeholder="Apellidos" required><br/>
+                    <input name="apellidos" type="text" id="inputApellidos" class="form-control input-lg" placeholder="Apellidos" required><br/>
                 </div>
 
                 <div class="form-group">
                     <label for="inputEmail">E-mail</label>
-                    <input type="email" id="inputEmail" class="form-control input-lg" placeholder="E-mail" required>
+                    <input name="email" type="email" id="inputEmail" class="form-control input-lg" placeholder="E-mail" required>
                 </div>
 
                 <div class="form-group">
                      <label for="inputPassword">Contraseña</label>
-                    <input type="password" id="inputPassword" class="form-control input-lg" placeholder="Contaseña" required>
+                    <input name="password" type="password" id="inputPassword" class="form-control input-lg" placeholder="Contaseña" required>
                 </div>
 
                 <div class="form-group">
                     <h3>¿Eres usuario o cuidador?</h3>
                     <label class="radio-inline">
-                        <input type="radio" name="inlineRadioOptions" id="Usuari" value="user" required> Usuari
+                        <input name="tipo" type="radio" name="inlineRadioOptions" id="Usuari" value="user" required> Usuari
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="inlineRadioOptions" id="Cuidador" value="cuidador" required> Cuidador
+                        <input name="tipo" type="radio" name="inlineRadioOptions" id="Cuidador" value="cuidador" required> Cuidador
                     </label><br/>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputFile">Quieres subir una foto?</label>
-                    <input type="file" id="exampleInputFile">
+                    <input name="foto" type="file" id="exampleInputFile">
                     <p class="help-block">Para subir una foto de perfil haz click en browse.</p>
                 </div>
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="...">
                     <div class="btn-group" role="group">
                         <button class="btn btn-lg btn-primary botonRegistro " type="submit">Registrame</button>
