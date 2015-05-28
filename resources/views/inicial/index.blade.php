@@ -20,6 +20,7 @@
         <div class="container hidden-sm hidden-md hidden-lg menuMovil center">
             <ul>
                 <li class="logoli"><img src="images/nuevo_logo.png" alt="" class="logo_mediano" /></li>
+                <hr size="4px">
                 <li class="lightGreen"><a href="">Accede</a></li>
                 <li class="verde"><a href="">Social</a></li>
                 <li class="azul"><a href="">Lenguaje</a></li>
@@ -32,7 +33,7 @@
 
             <div class="back col-md-6 hidden-xs"><img class="animated fadeIn customAnimated2" src="images/nuevo_logo.png" alt=""/></div>
             <!-- Modal del login button -->
-              <a href="" class="buttonLogin hidden-xs" data-toggle="modal" data-target=".bs-login-modal-lg"><span class="glyphicon glyphicon-user" aria-hidden="true"> </span> </a>
+              <a href="" class="buttonLogin hidden-xs" data-toggle="modal" data-target=".bs-login-modal-lg"><span class="glyphicon glyphicon-user" aria-hidden="true"> </span></a>
             
             
             <!-- modal del login contenido -->
@@ -47,25 +48,25 @@
                         <form>
                           <div class="form-group">
                             <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            <input type="email" class="form-control input-lg" id="exampleInputEmail1" placeholder="Enter email">
                           </div>
                           <div class="form-group">
                             <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <input type="password" class="form-control input-lg" id="exampleInputPassword1" placeholder="Password">
                           </div>
                           <div class="checkbox">
                             <label>
                               <input type="checkbox"> Recordar
                             </label>
                           </div>
-                          <button type="submit" class="btn btn-success btn-lg">Acceder</button>
+                          <button type="submit" class="btn btn-lg btn-block botonRegistro">Acceder</button>
                         </form>
 
                     </div>
 
                      <div class="modal-footer">
                         si no estas registrado registrate!
-                        <a href="{{ route('register') }}"><button type="button" class="btn btn-primary">Registrarse</button></a>
+                        <a href="{{ route('register') }}"><button type="button" class="btn btn-primary botonRegistro">Registrarse</button></a>
                     </div>
                   
                   </div>
@@ -73,22 +74,22 @@
               </div>
             </div>
             <div class="navigation hidden-xs" id="nav">
-                <div class="item user animated fadeIn customAnimated1">
+                <div class="item user animated fadeIn customAnimated1" id="social">
                     <img src="images/bg_user.png" alt="" width="199" height="199" class="circle"/>
                     <a href="{{ route('menuSocial') }}" class="icon"></a>
                     <h2>Social</h2>
                 </div>
-                <div class="item home animated fadeIn customAnimated2">
+                <div class="item home animated fadeIn customAnimated2" id="lenguaje">
                     <img src="images/bg_home.png" alt="" width="199" height="199" class="circle"/>
                     <a href="#" class="icon"></a>
                     <h2>Lenguaje</h2>
                 </div>
-                <div class="item shop animated fadeIn customAnimated3">
+                <div class="item shop animated fadeIn customAnimated3" id="memoria">
                     <img src="images/bg_shop.png" alt="" width="199" height="199" class="circle"/>
                     <a href="{{ route('menuMemoria') }}" class="icon"></a>
                     <h2>Memoria</h2>
                 </div>
-                <div class="item camera animated fadeIn customAnimated4">
+                <div class="item camera animated fadeIn customAnimated4" id="autogestion">
                     <img src="images/bg_camera.png" alt="" width="199" height="199" class="circle"/>
                     <a href="{{ route('menuAutogestion') }}" class="icon"></a>
                     <h2>Autogestión</h2>
@@ -114,6 +115,7 @@
                 $('#nav > div').hover(
                 function () {
                     var $this = $(this);
+
                     $this.find('img').stop().animate({
                         'width'     :'160px',
                         'height'    :'160px',
@@ -125,6 +127,7 @@
                     });
 
                     $this.find('a:first,h2').addClass('active');
+                   
                 },
                 function () {
                     var $this = $(this);
@@ -138,6 +141,7 @@
                     },5000,'easeOutBack');
 
                     $this.find('a:first,h2').removeClass('active');
+                
                 }
             );
             });
