@@ -19,13 +19,13 @@
     <body style="background-color:#F5FBFE">
         <div class="container hidden-sm hidden-md hidden-lg menuMovil center">
             <ul>
-                <li class="logoli"><img src="images/nuevo_logo.png" alt="" class="logo_mediano" /></li>
+                <li class="logoli"><img src="{{ asset('images/nuevo_logo.png') }}" alt="" class="logo_mediano" /></li>
                 <hr size="4px">
                 <li class="lightGreen"><a href="">Accede</a></li>
-                <li class="verde"><a href="">Social</a></li>
-                <li class="azul"><a href="">Lenguaje</a></li>
-                <li class="babyBlue"><a href="">Calculo y Logica</a></li>
-                <li class="gris"><a href="">Autogestión</a></li>
+                <li class="verde"><a href="{{ route('menuSocial') }}">Social</a></li>
+                <li class="azul"><a href="{{ route('menuLenguaje') }}">Lenguaje</a></li>
+                <li class="babyBlue"><a href="{{ route('menuMemoria') }}">Memoria</a></li>
+                <li class="gris"><a href="{{ route('menuAutogestion') }}">Autogestión</a></li>
             </ul>
         </div>
        
@@ -42,7 +42,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <img class="logo_mediano" src="images/nuevo_logo.png" alt="" />
+                        <img class="logo_mediano" src="{{ asset('images/nuevo_logo.png') }}" alt="" />
                     </div>
                     <div class="modal-body">
                         <form>
@@ -66,7 +66,7 @@
 
                      <div class="modal-footer">
                         si no estas registrado registrate!
-                        <a href="{{ route('register') }}"><button type="button" class="btn btn-primary botonRegistro">Registrarse</button></a>
+                        <a href="{{ url('/auth/register') }}"><button type="button" class="btn btn-primary">Registrarse</button></a>
                     </div>
                   
                   </div>
@@ -81,7 +81,7 @@
                 </div>
                 <div class="item home animated fadeIn customAnimated2" id="lenguaje">
                     <img src="images/bg_home.png" alt="" width="199" height="199" class="circle"/>
-                    <a href="#" class="icon"></a>
+                    <a href="{{ route('menuLenguaje') }}" class="icon"></a>
                     <h2>Lenguaje</h2>
                 </div>
                 <div class="item shop animated fadeIn customAnimated3" id="memoria">
