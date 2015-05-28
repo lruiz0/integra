@@ -19,7 +19,7 @@ Route::get('register', [
     'as' => 'register', 'uses' => 'RegisterController@index'
 ]);
 
-//Route::get('home', 'HomeController@index');
+Route::get('home', 'HomeController@index');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
