@@ -46,14 +46,12 @@ footer{
 		font-size: 30px;
 		
 }
-footer span, img{
-	display: inline-block;
 
-
-}
 footer a{
+	margin-top:15px !important;
 	position: relative;
 	font-family: 'Poiret One', cursive;
+	color:#1166CF;
 }
 footer a:hover{
 	text-decoration: none;

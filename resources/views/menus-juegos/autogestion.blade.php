@@ -15,6 +15,7 @@
     <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="{{ asset('css/listaJuegos.css') }}">
 <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ asset('css/animate.css') }}">
 
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
@@ -24,9 +25,9 @@
 
 <body>
     <div class="container-fluid">
-        <header><h1>Juegos de Autogestión</h1></header>
+        <header><h1>Juegos de <span style="color:grey;" class="animated flipIn">Autogestión</span></h1></header>
     </div>
-    <hr size="7" align="center"/>
+    <hr>
 
     
     <div class="container">
@@ -125,83 +126,26 @@
 
         </div>
 
-            <!--
-            <div class="media mediaGame col-md-4 col-lg-4">
-                    <div class="media-left">
-                        <a href="#">
-                          <img class="media-object" src="images/niña1.jpeg" alt="...">
-                        </a>
-                    </div>
-                <div class="media-body">
-                <h2 class="media-heading">Juego del supermercado</h2>
-                    <p>¡Haz la compra en el supero siguiendo la lista sin equivocarte! </p>
-                </div>
-            </div>
-
-            <div class="media mediaGame col-md-4 col-lg-4">
-                    <div class="media-left">
-                        <a href="#">
-                          <img class="media-object" src="images/niña1.jpeg" alt="...">
-                        </a>
-                    </div>
-                <div class="media-body">
-                <h2 class="media-heading">Juego del supermercado</h2>
-                    <p>¡Haz la compra en el supero siguiendo la lista sin equivocarte! </p>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-        <div class="row">
-            <div class="media mediaGame col-md-4 col-lg-4">
-                    <div class="media-left">
-                        <a href="#">
-                          <img class="media-object" src="images/niña1.jpeg" alt="...">
-                        </a>
-                    </div>
-                <div class="media-body">
-                <h2 class="media-heading">Juego del supermercado</h2>
-                    <p>¡Haz la compra en el supero siguiendo la lista sin equivocarte! (En construccion)</p>
-                </div>
-            </div>
-
-            <div class="media mediaGame col-md-4 col-lg-4">
-                    <div class="media-left">
-                        <a href="#">
-                          <img class="media-object" src="images/niña1.jpeg" alt="...">
-                        </a>
-                    </div>
-                <div class="media-body">
-                <h2 class="media-heading">Juego del supermercado</h2>
-                    <p>¡Haz la compra en el supero siguiendo la lista sin equivocarte! </p>
-                </div>
-            </div>
-
-            <div class="media mediaGame col-md-4 col-lg-4">
-                    <div class="media-left">
-                        <a href="#">
-                          <img class="media-object" src="images/niña1.jpeg" alt="...">
-                        </a>
-                    </div>
-                <div class="media-body">
-                <h2 class="media-heading">Juego del supermercado</h2>
-                    <p>¡Haz la compra en el supero siguiendo la lista sin equivocarte! </p>
-                </div>
-            </div>
-        </div>
-    
-        -->
 
 
     </div>  <!-- fin de la seccion del content principal-->
      
      <footer class="volver">
-        <a href="{{ route('/') }}"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Volver</a>
+        <a href="{{ route('/') }}"><span id="flecha" class="glyphicon glyphicon-home" aria-hidden="true"></span> Volver</a>
      </footer>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script>
+        $('.volver').hover(
+                function(){
+                // $(".volver").addClass("volver animated flipInX");
+                    $(".volver a").html("<span class='glyphicon glyphicon-arrow-left' aria-hidden='true'></span> Volver");
+                },
+                function(){
+                    //$(".volver").removeClass( "volver animated flipInX" );
+                    $(".volver a").html("<span class='glyphicon glyphicon-home' aria-hidden='true'></span> Volver");
+                }
+            )
+    </script>
 </body>
 </html>
