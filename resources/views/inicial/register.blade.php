@@ -11,16 +11,10 @@
         <title>Integra</title>
 
         <!-- Fonts -->
-<<<<<<< HEAD
         <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'> 
-=======
-        <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'/>
-        <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'/>
-        <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'/>
->>>>>>> ca86893a805224d52f0826b140e3f2f41dfb88fc
+        <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'> 
         <!-- Bootstrap -->
         <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
         <!-- Mis styles for this template ¡está en la carpeta public!-->
@@ -46,25 +40,25 @@
         <div class="formBack">
             <form role="form" method="POST" action="{{ url('/auth/register') }}">
 
-                <div class="form_header"><img class="logo_mediano"src="{{ asset('images/nuevo_logo.png') }}images/nuevo_logo.png"> <h2 class="form-group-heading">¡Registrate!</h2> </div>
+                <div class="form_header"><img class="logo_mediano"src="{{ asset('images/nuevo_logo.png') }}"> <h2 class="form-group-heading">¡Registrate!</h2> </div>
                 <div class="form-group">
                     <label for="inputName">Nombre</label>
-                    <input name="name" type="text" id="inputName" class="form-control input-lg" placeholder="Nombre" required autofocus><br/>
+                    <input name="name" type="text" id="inputName" class="form-control input-lg" placeholder="Nombre" value="{{ old('name') }}" required autofocus><br/>
                 </div>
 
                 <div class="form-group">
                     <label for="inputApellidos">Apellidos</label>
-                    <input name="apellidos" type="text" id="inputApellidos" class="form-control input-lg" placeholder="Apellidos" required><br/>
+                    <input name="apellidos" type="text" id="inputApellidos" class="form-control input-lg" placeholder="Apellidos" value="{{ old('apellidos') }}" required><br/>
                 </div>
 
                 <div class="form-group">
                     <label for="inputEmail">E-mail</label>
-                    <input name="email" type="email" id="inputEmail" class="form-control input-lg" placeholder="E-mail" required>
+                    <input name="email" type="email" id="inputEmail" class="form-control input-lg" placeholder="E-mail" value="{{ old('email') }}" required>
                 </div>
 
                 <div class="form-group">
                      <label for="inputPassword">Contraseña</label>
-                    <input name="password" type="password" id="inputPassword" class="form-control input-lg" placeholder="Contaseña" required>
+                    <input name="password" type="password" id="inputPassword" class="form-control input-lg" placeholder="Contaseña" value="{{ old('password') }}" required>
                 </div>
 
                 <div class="form-group">

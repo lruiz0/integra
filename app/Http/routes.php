@@ -16,7 +16,11 @@ Route::get('/', [
 ]);
 
 Route::get('register', [
-    'as' => 'register', 'uses' => 'RegisterController@index'
+    'as' => 'register', 'uses' => 'WelcomeController@register'
+]);
+
+Route::get('blog', [
+    'as' => 'blog', 'uses' => 'WelcomeController@blog'
 ]);
 
 Route::get('home', 'HomeController@index');

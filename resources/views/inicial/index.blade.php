@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Proyecto Integra</title>
+        <title>Integra</title>
         <meta name="description" content="Awesome Bubble Navigation with jQuery" />
         <meta name="keywords" content="jquery, circular menu, navigation, round, bubble"/>
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
@@ -66,7 +66,7 @@
 
                      <div class="modal-footer">
                         si no estas registrado registrate!
-                        <a href="{{ url('/auth/register') }}"><button type="button" class="btn btn-primary">Registrarse</button></a>
+                        <a href="{{ url('/register') }}"><button type="button" class="btn btn-primary">Registrarse</button></a>
                     </div>
                   
                   </div>
@@ -96,16 +96,16 @@
                 </div>
                 <div class="item fav animated fadeIn customAnimated5">
                     <img src="images/bg_fav.png" alt="" width="199" height="199" class="circle"/>
-                    <a href="#" class="icon"></a>
+                    <a href="{{ route('blog') }}" class="icon"></a>
                     <h2>Blog</h2>
                 </div>
             </div>
         </div>  <!-- fin de la seccion del content principal-->
 
         <footer>
-            <div class='icono'><a href=""><img src="images/facebookIcon.png" alt="" /></a></div>
-            <div class='icono'><img src="images/twitterIcon.png" alt="" /><a href=""></a></div>
-            <div class='icono'><a href=""><img src="images/inLogo.png" alt="" /></a></div>
+            <div class='icono'><a href="https://www.facebook.com/"><img src="images/facebookIcon.png" alt="" /></a></div>
+            <div class='icono'><a href="https://www.twitter.com/"><img src="images/twitterIcon.png" alt="" /></a></div>
+            <div class='icono'><a href="https://es.linkedin.com/"><img src="images/inLogo.png" alt="" /></a></div>
         </footer>
         <!-- The JavaScript -->
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>

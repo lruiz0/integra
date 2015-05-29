@@ -34,4 +34,23 @@ class WelcomeController extends Controller {
 		return view('inicial.index');
 	}
 
+	/**
+	 * Show the application welcome screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function register()
+	{
+		return view('inicial.register');
+	}
+
+	/**
+	 * Show the application blog to the user.
+	 *
+	 * @return Response
+	 */
+	public function blog()
+	{
+		return view('inicial.blog');
+	}
 }

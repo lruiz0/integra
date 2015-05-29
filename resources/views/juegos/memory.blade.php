@@ -20,7 +20,7 @@
 
     <div class="optimalsort-task">
         <div class="task-header">
-            <a href="#" class="os-logo" data-target="#aboutModal" data-toggle="modal"><img alt="Logo-optimalsort-black" src="{{ asset('images/nuevo_logo.png') }}" /></a>
+            <a href="{{ route('menuMemoria') }}" class="os-logo"><img alt="Logo-Integra" src="{{ asset('images/nuevo_logo.png') }}" /></a>
 
             <div id="contenedorDeBtn">
 
