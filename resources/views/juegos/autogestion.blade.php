@@ -36,19 +36,11 @@
 
         <div class="container-fluid">
              <div class="row center-block">
-<<<<<<< HEAD
-                <div id="hucha" class="droptarget" style="float: left;" ></div>
-                <div id="cajaDestino" class="droptarget" onmouseout="cargarDinero()" style="float: left; "></div>
-            </div>
-        </div>
-
-        
-=======
                 <div id="hucha" class="droptarget" ></div>
                 <div id="cajaDestino" class="droptarget" onmouseout="cargarDinero()"></div>
             </div>
         </div>
->>>>>>> 8461283d19ae29d13dee5505a3dd13299a03b9d0
+
         <p id="demo"></p>
         <div class="clear clearfix"></div>
 
