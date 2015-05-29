@@ -23,7 +23,8 @@ body {
     font-size: 35px;
 }
 #hucha {
-    float: left;
+
+    
     width: 600px;
     height: 500px;
     margin: 20px;
@@ -31,12 +32,13 @@ body {
     border: 5px #6EDE2B solid;
     background-color: #E6FFC6;
     border-radius: 15px;
+
 }
 
 
 
 #cajaDestino {
-    float: right;
+    
     width: 600px;
     height: 500px;
     min-height: 440px;
@@ -50,6 +52,13 @@ body {
     vertical-align: middle !important;
     font-size: 40px;
     color:#24AEDB;
+    float: right;
+    
+}
+@media screen and (max-width: 1200px){
+    #cajaDestino{
+        float: left;
+    }
 }
 
 
@@ -80,3 +89,4 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+

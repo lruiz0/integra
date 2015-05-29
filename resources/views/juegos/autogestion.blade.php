@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>De compras</title>
-    <link rel="icon" href="{{asset('img/favicon.bmp')}}"/>
+    <link rel="icon" href="{{ asset('img/favicon.bmp') }}"/>
 
-    <link rel="stylesheet" href="{{asset('css/estilo_de_prueba.css')}}"/>
+    <link rel="stylesheet" href="{{ asset('css/estilo_de_prueba.css') }}"/>
 
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('css/style_ir_de_compras.css')}}"/>
-    <link rel="stylesheet" href="{{asset('css/estiloIntegra.css')}}"/>
+    <link rel="stylesheet" href="{{ asset('css/style_ir_de_compras.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/estiloIntegra.css') }}"/>
     <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'> 
 
 
@@ -21,7 +21,9 @@
 
         <div class="optimalsort-task">
             <div class="task-header">
+
                 <a href="{{ route('menuAutogestion') }}" class="os-logo" ><img alt="Logo-optimalsort-black" src="{{asset('images/nuevo_logo.png')}}" width="256"/></a>
+
                 <div id="contenedorDeBtn">
                     <button type="button" class="btn btn-info" onclick="calcularResultado()" data-toggle="modal" data-target=".bs-example-modal-sm">He Terminado</button>
                     <button type="button" class="btn btn-danger" onclick="borrar()" >Rectificar</button>
@@ -31,11 +33,18 @@
             </div>
             <div class="clear clearfix"></div>
         </div>
-        <div id="hucha" class="droptarget" ></div>
-        <div id="cajaDestino" class="droptarget" onmouseout="cargarDinero()"></div>
+
+        <div class="container-fluid">
+             <div class="row center-block">
+                <div id="hucha" class="droptarget" style="float: left;" ></div>
+                <div id="cajaDestino" class="droptarget" onmouseout="cargarDinero()" style="float: left; "></div>
+            </div>
+        </div>
+
+        
         <p id="demo"></p>
         <div class="clear clearfix"></div>
-    </div>
+
 
 
 

@@ -7,7 +7,7 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="description" content="Página de registro"/>
         <meta name="author" content="Integra corp."/>
-        <link rel="icon" href="img/logo.png"/>
+        <link rel="icon" href="images/favicon.bmp"/>
         <title>Integra</title>
 
         <!-- Fonts -->
@@ -39,7 +39,7 @@
         <div class="formBack">
             <form role="form" method="POST" action="{{ url('/auth/register') }}">
 
-                <div class="form_header"><img class="logo_mediano"src="images/nuevo_logo.png"> <h2 class="form-group-heading">¡Registrate!</h2> </div>
+                <div class="form_header"><img class="logo_mediano"src="{{ asset('images/nuevo_logo.png') }}"> <h2 class="form-group-heading">¡Registrate!</h2> </div>
                 <div class="form-group">
                     <label for="inputName">Nombre</label>
                     <input name="name" type="text" id="inputName" class="form-control input-lg" placeholder="Nombre" required autofocus><br/>
