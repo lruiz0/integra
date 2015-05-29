@@ -40,25 +40,25 @@
         <div class="formBack">
             <form role="form" method="POST" action="{{ url('/auth/register') }}">
 
-                <div class="form_header"><img class="logo_mediano"src="{{ asset('images/nuevo_logo.png') }}images/nuevo_logo.png"> <h2 class="form-group-heading">¡Registrate!</h2> </div>
+                <div class="form_header"><img class="logo_mediano"src="{{ asset('images/nuevo_logo.png') }}"> <h2 class="form-group-heading">¡Registrate!</h2> </div>
                 <div class="form-group">
                     <label for="inputName">Nombre</label>
-                    <input name="name" type="text" id="inputName" class="form-control input-lg" placeholder="Nombre" required autofocus><br/>
+                    <input name="name" type="text" id="inputName" class="form-control input-lg" placeholder="Nombre" value="{{ old('name') }}" required autofocus><br/>
                 </div>
 
                 <div class="form-group">
                     <label for="inputApellidos">Apellidos</label>
-                    <input name="apellidos" type="text" id="inputApellidos" class="form-control input-lg" placeholder="Apellidos" required><br/>
+                    <input name="apellidos" type="text" id="inputApellidos" class="form-control input-lg" placeholder="Apellidos" value="{{ old('apellidos') }}" required><br/>
                 </div>
 
                 <div class="form-group">
                     <label for="inputEmail">E-mail</label>
-                    <input name="email" type="email" id="inputEmail" class="form-control input-lg" placeholder="E-mail" required>
+                    <input name="email" type="email" id="inputEmail" class="form-control input-lg" placeholder="E-mail" value="{{ old('email') }}" required>
                 </div>
 
                 <div class="form-group">
                      <label for="inputPassword">Contraseña</label>
-                    <input name="password" type="password" id="inputPassword" class="form-control input-lg" placeholder="Contaseña" required>
+                    <input name="password" type="password" id="inputPassword" class="form-control input-lg" placeholder="Contaseña" value="{{ old('password') }}" required>
                 </div>
 
                 <div class="form-group">
