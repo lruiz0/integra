@@ -7,7 +7,7 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="description" content="Página de registro"/>
         <meta name="author" content="Integra corp."/>
-        <link rel="icon" href="images/favicon.bmp"/>
+        <link rel="icon" href="{{ asset('images/favicon.bmp') }}"/>
         <title>Integra</title>
 
         <!-- Fonts -->

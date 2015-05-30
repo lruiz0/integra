@@ -30,7 +30,7 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
-/* menus --------------------------------------------------------------------------------------------------------------*/
+/* menus -----------------------------------------------------*/
 
 Route::get('menu-social', [
     'as' => 'menuSocial', 'uses' => 'JuegosController@menuSocial'
@@ -48,7 +48,7 @@ Route::get('menu-autogestion', [
     'as' => 'menuAutogestion', 'uses' => 'JuegosController@menuAutogestion'
 ]);
 
-/* juegos --------------------------------------------------------------------------------------------------------------*/
+/* juegos --------------------------------------------------------------*/
 
 Route::get('preguntas-social', [
     'as' => 'jSocial', 'uses' => 'JuegosController@preguntasSocial'
@@ -68,4 +68,10 @@ Route::get('memory', [
 
 Route::get('autogestion', [
     'as' => 'jAutogestion', 'uses' => 'JuegosController@autogestion'
+]);
+
+/* zona privada -------------------------------------------------------*/
+
+Route::get('tu-zona', [
+    'as' => 'zonaPrivada', 'uses' => 'JuegosController@zonaPrivada'
 ]);

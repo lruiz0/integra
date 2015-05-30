@@ -74,4 +74,10 @@ class JuegosController extends Controller {
     {
         return view('juegos.autogestion');
     }
+/* zona privada ------------------------------------------------------*/
+    
+    public function zonaPrivada()
+    {
+        return view('inicial.zonaPrivada');
+    }
 }

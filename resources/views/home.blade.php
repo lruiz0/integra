@@ -21,7 +21,7 @@
             <ul>
                 <li class="logoli"><img src="{{ asset('images/nuevo_logo.png') }}" alt="" class="logo_mediano" /></li>
                 <hr size="4px">
-                <li class="lightGreen"><a href="">Accede</a></li>
+                <li class="lightGreen"><a href="{{ url('/auth/login') }}">Accede</a></li>
                 <li class="verde"><a href="{{ route('menuSocial') }}">Social</a></li>
                 <li class="azul"><a href="{{ route('menuLenguaje') }}">Lenguaje</a></li>
                 <li class="babyBlue"><a href="{{ route('menuMemoria') }}">Memoria</a></li>
@@ -50,7 +50,7 @@
             
             
             <!-- modal del login contenido -->
-            <div class="modal fade bs-login-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <!--<div class="modal fade bs-login-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -79,13 +79,14 @@
 
                      <div class="modal-footer">
                         si no estas registrado registrate!
-                        <a href="{{ url('/register') }}"><button type="button" class="btn btn-primary">Registrarse</button></a>
+                        <a href="{{ url('/auth/register') }}"><button type="button" class="btn btn-primary">Registrarse</button></a>
                     </div>
                   
                   </div>
                 </div>
               </div>
-            </div>
+            </div>-->
+
             <div class="navigation hidden-xs" id="nav">
                 <div class="item user animated fadeIn customAnimated1" id="social">
                     <img src="images/bg_user.png" alt="" width="199" height="199" class="circle"/>
@@ -109,8 +110,8 @@
                 </div>
                 <div class="item fav animated fadeIn customAnimated5">
                     <img src="images/bg_fav.png" alt="" width="199" height="199" class="circle"/>
-                    <a href="{{ route('blog') }}" class="icon"></a>
-                    <h2>Blog</h2>
+                    <a href="{{ route('zonaPrivada') }}" class="icon"></a>
+                    <h2>Tu zona</h2>
                 </div>
             </div>
         </div>  <!-- fin de la seccion del content principal-->

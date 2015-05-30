@@ -9,6 +9,12 @@
 </head>
 <body>
 	<div class='contenedorCircular' style='background:red;'>
+		<h1>{{ Auth::user()->name }}</h1>
+		<h1>{{ Auth::user()->apellidos }}</h1>
+		<h1>{{ Auth::user()->email }}</h1>
+		<h1>{{ Auth::user()->password }}</h1>
+		<h1>{{ Auth::user()->tipo }}</h1>
+		<h1>{{ Auth::user()->foto }}</h1>
 	</div>
 	<div>
 		

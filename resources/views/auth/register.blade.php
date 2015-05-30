@@ -7,13 +7,14 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="description" content="Página de registro"/>
         <meta name="author" content="Integra corp."/>
-        <link rel="icon" href="images/favicon.bmp"/>
+        <link rel="icon" href="{{ asset('images/favicon.bmp') }}"/>
         <title>Integra</title>
 
         <!-- Fonts -->
         <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'/>
         <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'/>
         <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'> 
         <!-- Bootstrap -->
         <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
         <!-- Mis styles for this template ¡está en la carpeta public!-->
@@ -39,7 +40,6 @@
         <div class="formBack">
             <form role="form" method="POST" action="{{ url('/auth/register') }}">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
-
                 <div class="form_header"><img class="logo_mediano"src="{{ asset('images/nuevo_logo.png') }}"> <h2 class="form-group-heading">¡Registrate!</h2> </div>
                 <div class="form-group">
                     <label for="inputName">Nombre</label>
