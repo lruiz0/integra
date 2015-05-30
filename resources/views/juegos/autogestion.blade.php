@@ -89,7 +89,7 @@
                 $("#preguntas h1").css({'color':'red','textAlign':'center'});
             }
 
-            $('#contenedorDeBtn').append('<button type="button" class="btn btn-primary" onclick="document.location.reload()" >Volver a Jugar</button>')
+            $('#contenedorDeBtn').html('<button type="button" class="btn btn-primary" onclick="document.location.reload()" >Volver a Jugar</button>')
             
         }
 

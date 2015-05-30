@@ -38,35 +38,36 @@
         @endif
         <div class="formBack">
             <form role="form" method="POST" action="{{ url('/auth/register') }}">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                 <div class="form_header"><img class="logo_mediano"src="{{ asset('images/nuevo_logo.png') }}"> <h2 class="form-group-heading">¡Registrate!</h2> </div>
                 <div class="form-group">
                     <label for="inputName">Nombre</label>
-                    <input name="name" type="text" id="inputName" class="form-control input-lg" placeholder="Nombre" required autofocus><br/>
+                    <input name="name" type="text" id="inputName" class="form-control input-lg" placeholder="Nombre" value="{{ old('name') }}" required autofocus><br/>
                 </div>
 
                 <div class="form-group">
                     <label for="inputApellidos">Apellidos</label>
-                    <input name="apellidos" type="text" id="inputApellidos" class="form-control input-lg" placeholder="Apellidos" required><br/>
+                    <input name="apellidos" type="text" id="inputApellidos" class="form-control input-lg" placeholder="Apellidos" value="{{ old('apellidos') }}" required><br/>
                 </div>
 
                 <div class="form-group">
                     <label for="inputEmail">E-mail</label>
-                    <input name="email" type="email" id="inputEmail" class="form-control input-lg" placeholder="E-mail" required>
+                    <input name="email" type="email" id="inputEmail" class="form-control input-lg" placeholder="E-mail" value="{{ old('email') }}" required>
                 </div>
 
                 <div class="form-group">
                      <label for="inputPassword">Contraseña</label>
-                    <input name="password" type="password" id="inputPassword" class="form-control input-lg" placeholder="Contaseña" required>
+                    <input name="password" type="password" id="inputPassword" class="form-control input-lg" placeholder="Contaseña" value="{{ old('password') }}" required>
                 </div>
 
                 <div class="form-group">
                     <h3>¿Eres usuario o cuidador?</h3>
                     <label class="radio-inline">
-                        <input name="tipo" type="radio" name="inlineRadioOptions" id="Usuari" value="user" required> Usuari
+                        <input name="tipo" type="radio" id="Usuari" value="user" required> Usuari
                     </label>
                     <label class="radio-inline">
-                        <input name="tipo" type="radio" name="inlineRadioOptions" id="Cuidador" value="cuidador" required> Cuidador
+                        <input name="tipo" type="radio" id="Cuidador" value="cuidador" required> Cuidador
                     </label><br/>
                 </div>
                 <div class="form-group">
@@ -74,7 +75,7 @@
                     <input name="foto" type="file" id="exampleInputFile">
                     <p class="help-block">Para subir una foto de perfil haz click en browse.</p>
                 </div>
-                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                
                 <div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="...">
                     <div class="btn-group" role="group">
                         <button class="btn btn-lg btn-primary botonRegistro " type="submit">Registrame</button>

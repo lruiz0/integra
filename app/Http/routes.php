@@ -12,7 +12,7 @@
 */
 
 Route::get('/', [
-	'as'=> '/', 'uses' => 'WelcomeController@index'
+	'as'=> '/', 'uses' => 'HomeController@index'
 ]);
 
 Route::get('register', [
