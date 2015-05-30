@@ -14,6 +14,7 @@
         <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'/>
         <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'/>
         <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'> 
         <!-- Bootstrap -->
         <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
         <!-- Mis styles for this template ¡está en la carpeta public!-->
@@ -28,7 +29,7 @@
     <body>
         @if (count($errors) > 0)
             <div class="alert alert-danger">
-                <strong>Whoops!</strong> There were some problems with your input.<br><br>
+                <strong>Whoops!</strong> Email o contraseña incorrectos<br><br>
                 <ul>
                     @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
@@ -36,7 +37,7 @@
                 </ul>
             </div>
         @endif
-        <div class="formBack">
+        <div class="formBack loginForm">
             <form role="form" method="POST" action="{{ url('/auth/login') }}">
 	        	<input type="hidden" name="_token" value="{{ csrf_token() }}">
 	            <div class="form_header"><img class="logo_mediano"src="{{ asset('images/nuevo_logo.png') }}"> <h2 class="form-group-heading">¡Loginate!</h2> </div>
@@ -57,13 +58,13 @@
                     <div class="btn-group" role="group">
                         <button class="btn btn-lg btn-primary botonRegistro " type="submit">Acceder</button>
                     </div>
-                    <div class="btn-group" role="group">
-                        <button class="btn btn-lg btn-primary botonRegistro " onclick="window.location='{{ route('/') }}'">Volver</button>
-                    </div>
+                    
                 </div>
                 <div class="modal-footer">
                     si no estas registrado registrate!
-                    <a href="{{ url('/auth/register') }}"><button type="button" class="btn btn-primary">Registrarse</button></a>
+                    <div class="btn-group" role="group">
+                        <button class="btn btn-lg btn-primary botonRegistro " onclick="window.location='{{ url('/auth/register') }}'">Registrate</button>
+                    </div>
                 </div>
             </form>
         </div>

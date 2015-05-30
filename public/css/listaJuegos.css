@@ -42,19 +42,18 @@ header{
 hr{
 	color:#9ACC3A;
 }
-footer{
-		font-size: 30px;
-		
-}
 
-footer a{
+
+.volver{
+	font-size: 30px;
+}
+.volver a{
 	margin-top:15px !important;
 	position: relative;
 	font-family: 'Poiret One', cursive;
 	color:#1166CF;
 }
-footer a:hover{
+.volver a:hover{
 	text-decoration: none;
 	color:#90C11C;
 }
-

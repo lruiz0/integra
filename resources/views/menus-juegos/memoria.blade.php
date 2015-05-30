@@ -26,7 +26,7 @@
     <div class="container-fluid">
         <header><h1>Juegos de <span style="color:#74FDD8;">Memoria</span></h1></header>
     </div>
-    <hr size="7" align="center"/>
+    <hr>
 
     
     <div class="container">

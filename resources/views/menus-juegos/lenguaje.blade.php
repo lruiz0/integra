@@ -19,10 +19,10 @@
     <body>
         <div class="container-fluid">
             <header>
-                <h1>Juegos de habilidad lingüística</h1>
+                <h1>Juegos de <span style="color:#75CDF1;">habilidad lingüística</span></h1>
             </header>
         </div>
-        <hr size="7" align="center"/>
+        <hr>
         <div class="container">
             <div class="row">
                 <div class="mediaGame col-xs-12 col-sm-4 col-md-4 col-lg-4">
