@@ -89,11 +89,9 @@
                 <div class="modal-footer">
                     si no estas registrado registrate!
                     <div class="btn-group" role="group">
-                        <a href="{{url('/auth/register') }}">
-                            <button
-                            class="btn btn-lg btn-primary botonRegistro">
-                            Registrate</button>
-                        </a>
+                        <button class="btn btn-lg btn-primary botonRegistro"
+                        onclick="window.location='{{
+                        url("/auth/register") }}'">Registrate</button>
                     </div>
                 </div>
             </form>
