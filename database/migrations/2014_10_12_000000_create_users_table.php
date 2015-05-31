@@ -6,7 +6,9 @@ use Illuminate\Database\Migrations\Migration;
 class CreateUsersTable extends Migration {
 
 	/**
-	 * Run the migrations.
+	 * Run the migrations. Ejecuta la migración
+	 * se ha modificado para que el modelo User
+	 * tenga más campos.
 	 *
 	 * @return void
 	 */
@@ -27,7 +29,7 @@ class CreateUsersTable extends Migration {
 	}
 
 	/**
-	 * Reverse the migrations.
+	 * Reverse the migrations. Revierte la migración
 	 *
 	 * @return void
 	 */

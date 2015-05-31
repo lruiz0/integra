@@ -15,22 +15,12 @@ Route::get('/', [
 	'as'=> '/', 'uses' => 'HomeController@index'
 ]);
 
-Route::get('register', [
-    'as' => 'register', 'uses' => 'WelcomeController@register'
-]);
-
-Route::get('blog', [
-    'as' => 'blog', 'uses' => 'WelcomeController@blog'
-]);
-
 Route::get('home', 'HomeController@index');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
-
-/* menus -----------------------------------------------------*/
 
 Route::get('menu-social', [
     'as' => 'menuSocial', 'uses' => 'JuegosController@menuSocial'
@@ -47,8 +37,6 @@ Route::get('menu-memoria', [
 Route::get('menu-autogestion', [
     'as' => 'menuAutogestion', 'uses' => 'JuegosController@menuAutogestion'
 ]);
-
-/* juegos --------------------------------------------------------------*/
 
 Route::get('preguntas-social', [
     'as' => 'jSocial', 'uses' => 'JuegosController@preguntasSocial'
@@ -69,8 +57,6 @@ Route::get('memory', [
 Route::get('autogestion', [
     'as' => 'jAutogestion', 'uses' => 'JuegosController@autogestion'
 ]);
-
-/* zona privada -------------------------------------------------------*/
 
 Route::get('tu-zona', [
     'as' => 'zonaPrivada', 'uses' => 'JuegosController@zonaPrivada'

@@ -14,7 +14,7 @@ class HomeController extends Controller {
 	*/
 
 	/**
-	 * Create a new controller instance.
+	 * Create a new controller instance. El contructor es auth.
 	 *
 	 * @return void
 	 */

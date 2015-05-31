@@ -1,3 +1,9 @@
+<?php
+/**
+* Menú principal donde están lo enlaces a los distintos sub-menus
+* y a la página personal.
+*/
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en">
@@ -100,7 +106,7 @@
                     <img src="images/bg_fav.png" alt="" width="199"
                     height="199" class="circle"/>
                     <a href="{{ route('zonaPrivada') }}" class="icon"></a>
-                    <h2>Tu zona</h2>
+                    <h2>Tu área</h2>
                 </div>
             </div>
         </div>  <!-- fin de la seccion del content principal-->

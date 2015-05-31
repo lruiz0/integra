@@ -1,6 +1,7 @@
 <?php
 /**
-* Página para registrarse.
+* Juego de autogestión Juego que sirve para aprender a reunir
+* la cantidad de dinero necesaria según una situación hipotética.
 */
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
