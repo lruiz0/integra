@@ -1,25 +1,33 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>Integra</title>
-        <meta name="description" content="Awesome Bubble Navigation with jQuery"/>
-        <meta name="keywords" content="jquery, circular menu, navigation, round, bubble"/>        
-        <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'/> 
+        <meta name="description" content="Main language games menu"/>
+        <meta name="keywords" content="integra, language"/>        
+        <link href='http://fonts.googleapis.com/css?family=Poiret+One'
+        rel='stylesheet' type='text/css'/> 
         <link rel="stylesheet" type="text/css" href="{{ asset('css/estiloIntegra.css') }}"/>
-        <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'/>
-        <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'/>
-        <link rel="stylesheet" type="text/css" href="{{ asset('css/listaJuegos.css') }}"/>
-        <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=Indie+Flower'
+        rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=Quicksand'
+        rel='stylesheet' type='text/css'/>
+        <link rel="stylesheet" type="text/css" href="{{
+        asset('css/listaJuegos.css') }}"/>
+        <link href='http://fonts.googleapis.com/css?family=Poiret+One'
+        rel='stylesheet' type='text/css'/>
         <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet"/>
         <link rel="icon" href="{{ asset('images/favicon.bmp') }}"/>
     </head>
     <body>
         <div class="container-fluid">
             <header>
-                <h1>Juegos de <span style="color:#75CDF1;">habilidad lingüística</span></h1>
+                <h1>Juegos de 
+                    <span style="color:#75CDF1;">habilidad lingüística</span>
+                </h1>
             </header>
         </div>
         <hr>
@@ -34,7 +42,8 @@
                         </div>
                         <div class=" col-md-5 col-lg-4">
                             <h3 >Preguntas de habilidad lingüística</h3>
-                            <p>¡Haz la compra en el super siguiendo la lista sin equivocarte! </p>
+                            <p>¡Haz la compra en el super siguiendo la lista 
+                                sin equivocarte! </p>
                         </div>
                     </div>
                 </div>
@@ -47,7 +56,8 @@
                         </div>
                         <div class=" col-md-5 col-lg-4">
                             <h3>Juego del supermercado</h3>
-                            <p>¡Haz la compra en el super siguiendo la lista sin equivocarte! </p>
+                            <p>¡Haz la compra en el super siguiendo la lista 
+                                sin equivocarte! </p>
                         </div>
                     </div>
                 </div>
@@ -60,7 +70,8 @@
                         </div>
                         <div class=" col-md-5 col-lg-4">
                             <h3>Juego del supermercado</h3>
-                            <p>¡Haz la compra en el super siguiendo la lista sin equivocarte! </p>
+                            <p>¡Haz la compra en el super siguiendo la lista 
+                                sin equivocarte! </p>
                         </div>
                     </div>
                 </div>
@@ -75,7 +86,8 @@
                         </div>
                         <div class=" col-md-5 col-lg-4">
                             <h3>Juego del supermercado</h3>
-                            <p>¡Haz la compra en el super siguiendo la lista sin equivocarte! </p>
+                            <p>¡Haz la compra en el super siguiendo la lista 
+                                sin equivocarte! </p>
                         </div>
                     </div>
                 </div>
@@ -88,7 +100,8 @@
                         </div>
                         <div class=" col-md-5 col-lg-4">
                             <h3>Juego del supermercado</h3>
-                            <p>¡Haz la compra en el super siguiendo la lista sin equivocarte! </p>
+                            <p>¡Haz la compra en el super siguiendo la lista 
+                                sin equivocarte! </p>
                         </div>
                     </div>
                 </div>
@@ -101,26 +114,35 @@
                         </div>
                         <div class=" col-md-5 col-lg-4">
                             <h3>Juego del supermercado</h3>
-                            <p>¡Haz la compra en el super siguiendo la lista sin equivocarte! </p>
+                            <p>¡Haz la compra en el super siguiendo la lista 
+                                sin equivocarte! </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>  <!-- fin de la seccion del content principal-->
         <footer class="volver">
-            <a href="{{ route('/') }}"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Volver</a>
+            <a href="{{ route('/') }}">
+                <span class="glyphicon glyphicon-home" aria-hidden="true">
+                    <!--El espacio delante el volver és importante!-->
+                </span> Volver
+            </a>
         </footer>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src=
+        "http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+        </script>
         <script src="{{ asset('js/bootstrap.min.js') }}"></script>
         <script>
         $('.volver').hover(
                 function(){
                 // $(".volver").addClass("volver animated flipInX");
-                    $(".volver a").html("<span class='glyphicon glyphicon-arrow-left' aria-hidden='true'></span> Volver");
+                    $(".volver a").html(
+                        "<span class='glyphicon glyphicon-arrow-left' aria-hidden='true'></span> Volver");
                 },
                 function(){
                     //$(".volver").removeClass( "volver animated flipInX" );
-                    $(".volver a").html("<span class='glyphicon glyphicon-home' aria-hidden='true'></span> Volver");
+                    $(".volver a").html(
+                        "<span class='glyphicon glyphicon-home' aria-hidden='true'></span> Volver");
                 }
             )
         </script>

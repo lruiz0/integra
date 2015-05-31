@@ -14,11 +14,10 @@ consent
         asset('css/estilo_de_prueba.css') }}"/>
         <link rel="stylesheet" href="{{ asset('css/lenguaje.css') }}"/>
         <link rel="stylesheet" href="{{ asset('css/style_candy_crack.css') }}"
-        type="text/css" media="screen" />
+        type="text/css" media="screen"/>
         <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet"/>
         <meta name="author" content="Zolmeister"/>
         <script>
-
             setTimeout(function(){
                 var ga = document.createElement('script');
                 ga.async = true;

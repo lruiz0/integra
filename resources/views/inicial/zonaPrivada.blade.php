@@ -25,7 +25,6 @@
 								Auth::user()->tipo }}</span>
 						</h3>
 					</div>
-
 					<div class="col-md-3" style="">
 						<nav class="navbar">
 							<form class="navbar-form navbar-left"
@@ -45,10 +44,7 @@
 				<hr>
 			</div>
 		</header>
-
-
 		<div class='contenedorCircular'>
-
 			<h6>{{ Auth::user()->name }}</h6>
 			<h6>{{ Auth::user()->apellidos }}</h6>
 			<h6>{{ Auth::user()->email }}</h6>
@@ -61,20 +57,21 @@
 	        	<span id="flecha" class="glyphicon glyphicon-home"
 	        	aria-hidden="true"></span> Volver</a>
 	    </footer>
-	     
 		<script src="{{asset('js/jquery-1.11.3.min.js')}}"></script>
 	    <script src="{{ asset('js/bootstrap.min.js')}}"></script>
 	    <script>
 	        $('.volver').hover(
-	                function(){
-	                // $(".volver").addClass("volver animated flipInX");
-	                    $(".volver a").html("<span class='glyphicon glyphicon-arrow-left' aria-hidden='true'></span> Volver");
-	                },
-	                function(){
-	                    //$(".volver").removeClass( "volver animated flipInX" );
-	                    $(".volver a").html("<span class='glyphicon glyphicon-home' aria-hidden='true'></span> Volver");
-	                }
-	            )
+                function(){
+                // $(".volver").addClass("volver animated flipInX");
+                    $(".volver a").html(
+                    	"<span class='glyphicon glyphicon-arrow-left' aria-hidden='true'></span> Volver");
+                },
+                function(){
+                    //$(".volver").removeClass( "volver animated flipInX" );
+                    $(".volver a").html(
+                    	"<span class='glyphicon glyphicon-home' aria-hidden='true'></span> Volver");
+                }
+            )
 	    </script>
 	</body>
 </html>

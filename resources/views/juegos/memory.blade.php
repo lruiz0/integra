@@ -44,45 +44,45 @@
         </div>
         <div id="imagenes">
             <div id="img1"><img src="{{
-                asset('images/memoria/color_1.jpg') }}" alt=""/></div>
+                asset('images/memoria/color_1.jpg') }}" alt="c1"/></div>
             <div id="img2"><img src="{{
-                asset('images/memoria/color_2.jpg') }}" alt=""/></div>
+                asset('images/memoria/color_2.jpg') }}" alt="c2"/></div>
             <div id="img3"><img src="{{
-                asset('images/memoria/color_3.jpg') }}" alt=""/></div>
+                asset('images/memoria/color_3.jpg') }}" alt="c3"/></div>
             <div id="img4"><img src="{{
-                asset('images/memoria/color_4.jpg') }}" alt=""/></div>
+                asset('images/memoria/color_4.jpg') }}" alt="c4"/></div>
             <div id="img5"><img src="{{
-                asset('images/memoria/color_5.jpg') }}" alt=""/></div>
+                asset('images/memoria/color_5.jpg') }}" alt="c5"/></div>
             <div id="img6"><img src="{{
-                asset('images/memoria/color_6.jpg') }}" alt=""/></div>
+                asset('images/memoria/color_6.jpg') }}" alt="c6"/></div>
             <div id="img7"><img src="{{
-                asset('images/memoria/color_7.jpg') }}" alt=""/></div>
+                asset('images/memoria/color_7.jpg') }}" alt="c7"/></div>
             <div id="img8"><img src="{{
-                asset('images/memoria/color_8.jpg') }}" alt=""/></div>
+                asset('images/memoria/color_8.jpg') }}" alt="c8"/></div>
             <div id="img9"><img src="{{
-                asset('images/memoria/color_9.jpg') }}" alt=""/></div>
+                asset('images/memoria/color_9.jpg') }}" alt="c9"/></div>
             <div id="img10"><img src="{{
-                asset('images/memoria/color_10.jpg') }}" alt=""/></div>
+                asset('images/memoria/color_10.jpg') }}" alt="c10"/></div>
             <div id="img11"><img src="{{
-                asset('images/memoria/color_1.jpg') }}" alt=""/></div>
+                asset('images/memoria/color_1.jpg') }}" alt="c1"/></div>
             <div id="img12"><img src="{{
-                asset('images/memoria/color_2.jpg') }}" alt=""/></div>
+                asset('images/memoria/color_2.jpg') }}" alt="c2"/></div>
             <div id="img13"><img src="{{
-                asset('images/memoria/color_3.jpg') }}" alt=""/></div>
+                asset('images/memoria/color_3.jpg') }}" alt="c3"/></div>
             <div id="img14"><img src="{{
-                asset('images/memoria/color_4.jpg') }}" alt=""/></div>
+                asset('images/memoria/color_4.jpg') }}" alt="c4"/></div>
             <div id="img15"><img src="{{
-                asset('images/memoria/color_5.jpg') }}" alt=""/></div>
+                asset('images/memoria/color_5.jpg') }}" alt="c5"/></div>
             <div id="img16"><img src="{{
-                asset('images/memoria/color_6.jpg') }}" alt=""/></div>
+                asset('images/memoria/color_6.jpg') }}" alt="c6"/></div>
             <div id="img17"><img src="{{
-                asset('images/memoria/color_7.jpg') }}" alt=""/></div>
+                asset('images/memoria/color_7.jpg') }}" alt="c7"/></div>
             <div id="img18"><img src="{{
-                asset('images/memoria/color_8.jpg') }}" alt=""/></div>
+                asset('images/memoria/color_8.jpg') }}" alt="c8"/></div>
             <div id="img19"><img src="{{
-                asset('images/memoria/color_9.jpg') }}" alt=""/></div>
+                asset('images/memoria/color_9.jpg') }}" alt="c9"/></div>
             <div id="img20"><img src="{{
-                asset('images/memoria/color_10.jpg') }}" alt=""/></div>
+                asset('images/memoria/color_10.jpg') }}" alt="c10"/></div>
         </div>
     </body>
 </html>

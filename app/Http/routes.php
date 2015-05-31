@@ -23,7 +23,7 @@ Route::get('blog', [
     'as' => 'blog', 'uses' => 'WelcomeController@blog'
 ]);
 
-Route::get('home', 'HomeController@index');
+//Route::get('home', 'HomeController@index');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
