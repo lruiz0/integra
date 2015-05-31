@@ -58,6 +58,6 @@ Route::get('autogestion', [
     'as' => 'jAutogestion', 'uses' => 'JuegosController@autogestion'
 ]);
 
-Route::get('tu-zona', [
+Route::get('tu-area', [
     'as' => 'zonaPrivada', 'uses' => 'JuegosController@zonaPrivada'
 ]);
