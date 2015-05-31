@@ -17,7 +17,7 @@
         <link href='http://fonts.googleapis.com/css?family=Quicksand'
         rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="{{ 
-        sset('css/listaJuegos.css') }}">
+        asset('css/listaJuegos.css') }}">
         <link href='http://fonts.googleapis.com/css?family=Poiret+One'
         rel='stylesheet' type='text/css'>
         <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">

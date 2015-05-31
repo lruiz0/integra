@@ -18,7 +18,8 @@
 						alt="tu foto" class="img-circle">
 					</div>
 					<div class="nombre col-md-6">
-						<h1>{{ Auth::user()->name }} Ruiz Salillas</h1>
+						<h1>{{ Auth::user()->name }} 
+							{{ Auth::user()->apellidos }}</h1>
 						<h3>{{ Auth::user()->email }}</h3>
 						<h3>
 							<span style="color: #A8ADAC">{{
@@ -45,12 +46,12 @@
 			</div>
 		</header>
 		<div class='contenedorCircular'>
-			<h6>{{ Auth::user()->name }}</h6>
-			<h6>{{ Auth::user()->apellidos }}</h6>
-			<h6>{{ Auth::user()->email }}</h6>
-			<h6>{{ Auth::user()->password }}</h6>
-			<h6>{{ Auth::user()->tipo }}</h6>
-			<h6>{{ Auth::user()->foto }}</h6>
+			<h4>{{ Auth::user()->name }}</h4>
+			<h4>{{ Auth::user()->apellidos }}</h4>
+			<h4>{{ Auth::user()->email }}</h4>
+			<h4>{{ Auth::user()->password }}</h4>
+			<h4>{{ Auth::user()->tipo }}</h4>
+			<h4>{{ Auth::user()->foto }}</h4>
 		</div>
 		<footer class="volver">
 	        <a href="{{ route('/') }}">
