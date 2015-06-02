@@ -115,4 +115,8 @@ class JuegosController extends Controller {
     {
         return view('inicial.zonaPrivada');
     }
+    public function zonaPrivada2()
+    {
+        return view('inicial.zonaPrivadaAdmin');
+    }
 }

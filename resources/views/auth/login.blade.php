@@ -90,8 +90,7 @@
                     si no estas registrado registrate!
                     <div class="btn-group" role="group">
                         <button class="btn btn-lg btn-primary botonRegistro"
-                        onclick="window.location='{{
-                        url("/auth/register") }}'">Registrate</button>
+                        onclick='window.location=" {{url("/auth/register") }}" '>Registrate</button>
                     </div>
                 </div>
             </form>

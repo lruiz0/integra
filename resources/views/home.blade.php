@@ -102,7 +102,11 @@
                 <div class="item fav animated fadeIn customAnimated5">
                     <img src="images/bg_fav.png" alt="" width="199"
                     height="199" class="circle"/>
+                    @if(Auth::user()->tipo == "cuidador")
+                    <a href="{{ route('zonaPrivada2') }}" class="icon"></a>
+                    @else
                     <a href="{{ route('zonaPrivada') }}" class="icon"></a>
+                    @endif
                     <h2>Tu área</h2>
                 </div>
             </div>

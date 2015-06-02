@@ -1,8 +1,8 @@
-<?php namespace app\Http\Controllers;
+<?php namespace App\Http\Controllers;
 
-use app\Http\Requests;
-use app\Http\Controllers\Controller;
-
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
+use App\User;
 use Illuminate\Http\Request;
 
 class UsersController extends Controller {
@@ -15,6 +15,7 @@ class UsersController extends Controller {
 	public function index()
 	{
 		$users=User::paginate();
+		
 		return view('inicial.zonaPrivada', compact('users'));
 	}
 
