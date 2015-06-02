@@ -52,12 +52,12 @@
 			</div>
 		</header>
 		<div class='contenedorCircular'>
-			<h4>{{ Auth::user()->name }}</h4>
+			<!--<h4>{{ Auth::user()->name }}</h4>
 			<h4>{{ Auth::user()->apellidos }}</h4>
 			<h4>{{ Auth::user()->email }}</h4>
 			<h4>{{ Auth::user()->password }}</h4>
 			<h4>{{ Auth::user()->tipo }}</h4>
-			<h4>{{ Auth::user()->foto }}</h4>
+			<h4>{{ Auth::user()->foto }}</h4>-->
 		</div>
 		<footer class="volver">
 	        <a href="{{ route('/') }}">
