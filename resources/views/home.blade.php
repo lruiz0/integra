@@ -49,30 +49,27 @@
             </ul>
         </div>
     	<div id="logout">
-    		<ul class="nav navbar-nav navbar-right">
+    
 				@if (Auth::guest())
 					<h1>Loginate!</h1><!--Esto no se muestra nunca-->
 				@else
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
-						<ul class="dropdown-menu" role="menu">
-							<li><a href="{{ url('/auth/logout') }}">Logout</a></li>
-						</ul>
-					</li>
+                <div>
+                    <p style="display:inline; float:right;">Bienvenido {{ Auth::user()->name }}</p>
+                    <a id="botonDeLogin" href="{{ url('/auth/logout') }}" class="buttonLogin hidden-xs"><span style="display:inline;" class="glyphicon glyphicon-off" aria-hidden="true"> </span></a>
+                </div>
+                   
+                
+					
+					
+					
 				@endif
-			</ul>
+		
     	</div>
         <div id="content">
             <div class="back col-md-6 hidden-xs">
                 <img class="animated fadeIn customAnimated2"
                 src="images/nuevo_logo.png" alt="logo"/>
             </div>
-            <!-- Modal del login button -->
-            <a href="" class="buttonLogin hidden-xs" data-toggle="modal"
-            data-target=".bs-login-modal-lg">
-                <span class="glyphicon glyphicon-user" aria-hidden="true">
-                </span>
-            </a>
             <div class="navigation hidden-xs" id="nav">
                 <div class="item user animated fadeIn customAnimated1"
                 id="social">

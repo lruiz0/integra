@@ -28,8 +28,7 @@
 							{{ Auth::user()->apellidos }}</h1>
 						<h3>{{ Auth::user()->email }}</h3>
 						<h3>
-							<span style="color: #A8ADAC">{{
-								Auth::user()->tipo }}</span>
+							<span style="color: #A8ADAC">{{Auth::user()->tipo }}</span>
 						</h3>
 					</div>
 					<div class="col-md-3" style="">
@@ -52,12 +51,8 @@
 			</div>
 		</header>
 		<div class='contenedorCircular'>
-			<h4>{{ Auth::user()->name }}</h4>
-			<h4>{{ Auth::user()->apellidos }}</h4>
-			<h4>{{ Auth::user()->email }}</h4>
-			<h4>{{ Auth::user()->password }}</h4>
-			<h4>{{ Auth::user()->tipo }}</h4>
-			<h4>{{ Auth::user()->foto }}</h4>
+			en construccion
+
 		</div>
 		<footer class="volver">
 	        <a href="{{ route('/') }}">

@@ -44,16 +44,3 @@ hr{
 }
 
 
-.volver{
-	font-size: 30px;
-}
-.volver a{
-	margin-top:15px !important;
-	position: relative;
-	font-family: 'Poiret One', cursive;
-	color:#1166CF;
-}
-.volver a:hover{
-	text-decoration: none;
-	color:#90C11C;
-}
