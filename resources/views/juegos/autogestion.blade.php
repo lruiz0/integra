@@ -43,12 +43,13 @@
             </div>
             <div class="clear clearfix"></div>
         </div>
-        <div class="container-fluid">
-             <div class="row center-block">
-                <div id="hucha" class="droptarget" ></div>
-                <div id="cajaDestino" class="droptarget"
-                onmouseout="cargarDinero()"></div>
-            </div>
+        <div style="position:absolute;" class="center-block">
+            <div id="hucha" class="droptarget" ></div>
+                <div id="cajaDestino" class="droptarget" onmouseout="cargarDinero()"></div>
+            
+        </div>
+                
+        
         </div>
         <p id="demo"></p>
         <div class="clear clearfix"></div>

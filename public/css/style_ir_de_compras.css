@@ -32,15 +32,14 @@ body {
     border: 5px #6EDE2B solid;
     background-color: #E6FFC6;
     border-radius: 15px;
-    position: fixed;
-    
+    float:left;
 
 }
 
 
 
 #cajaDestino {
-    position:absolute;
+    
     width: 600px;
     height: 500px;
     min-height: 440px;
@@ -55,7 +54,7 @@ body {
     font-size: 40px;
     color:#24AEDB;
     
-
+    float: left;
     
     
 }
