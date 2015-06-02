@@ -9,15 +9,15 @@
             "valor"     : 200
         },
         {
-            "enunciado" : "Pon en la caja 10 euros con 55 centimos",
+            "enunciado" : "Pon en la caja 10 euros con 55 céntimos",
             "valor"     : 10.55
         },
         {
-            "enunciado" : "Pon en la caja 75 centimos",
+            "enunciado" : "Pon en la caja 75 céntimos",
             "valor"     : 0.75
         },
         {
-            "enunciado" : "Pon en la caja 1 euro con 33 centimos",
+            "enunciado" : "Pon en la caja 1 euro con 33 céntimos",
             "valor"     : 1.33
         },
         {
@@ -33,7 +33,7 @@
             "valor"     : 1223
         },
         {
-            "enunciado" : "Pon en la caja 199 euros con 99 centimos",
+            "enunciado" : "Pon en la caja 199 euros con 99 céntimos",
             "valor"     : 199.99
         },
         {
@@ -41,7 +41,7 @@
             "valor"     : 105
         },
         {
-            "enunciado" : "Pon en la caja 423 euros con 56 centimos",
+            "enunciado" : "Pon en la caja 423 euros con 56 céntimos",
             "valor"     : 423.56
         }
 
