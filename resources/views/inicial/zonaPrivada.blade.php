@@ -51,8 +51,6 @@
 			</div>
 		</header>
 		<div class='contenedorCircular'>
-			en construccion
-
 		</div>
 		<footer class="volver">
 	        <a href="{{ route('/') }}">
