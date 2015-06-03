@@ -54,13 +54,14 @@ Route::get('autogestion', [
     'as' => 'jAutogestion', 'uses' => 'JuegosController@autogestion'
 ]);
 
-Route::get('tu-area', [
-    'as' => 'zonaPrivada', 'uses' => 'JuegosController@zonaPrivada'
-]);
-Route::get('tu-area2', [
-    'as' => 'zonaPrivada2', 'uses' => 'JuegosController@zonaPrivada2'
+Route::get('tu-area-usuario', [
+    'as' => 'zonaPrivadaUsuario', 'uses' => 'JuegosController@zonaPrivadaUsuario'
 ]);
 
-Route::get('users', 'UsersController@index');
-Route::resource('users', 'UsersController');
-Route::controller('users', 'UsersController');
+Route::get('tu-area-cuidador', [
+    'as' => 'zonaPrivadaCuidador', 'uses' => 'JuegosController@zonaPrivadaCuidador'
+]);
+
+Route::get('puntuaciones', [
+    'as' => 'puntuaciones', 'uses' => 'JuegosController@puntuaciones'
+]);

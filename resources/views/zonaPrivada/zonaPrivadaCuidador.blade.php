@@ -7,25 +7,26 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en">
     <head>
-      <meta charset="UTF-8">
-      <title>Tu area</title>
-      <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-      <link rel="stylesheet" href="{{ asset('css/estiloIntegra.css') }}">
-      <link rel="stylesheet" href="{{ asset('css/blog.css') }}">
-      <link href='http://fonts.googleapis.com/css?family=Poiret+One'
-      rel='stylesheet' type='text/css'> 
-      <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One'
-      rel='stylesheet' type='text/css'>
-      <link rel="icon" href="{{ asset('images/favicon.bmp') }}"/>
+        <meta charset="UTF-8"/>
+        <title>Tu area</title>
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('css/estiloIntegra.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('css/blog.css') }}"/>
+        <link href='http://fonts.googleapis.com/css?family=Poiret+One'
+        rel='stylesheet' type='text/css'/> 
+        <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One'
+        rel='stylesheet' type='text/css'/>
+        <link rel="icon" href="{{ asset('images/favicon.bmp') }}"/>
     </head>
     <body>
         <header>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-3">
-                      <img alt="tu foto"
-                      src="data:image/jpg;base64,{{
-                      chunk_split(base64_encode(Auth::user()->foto)) }}">‌​
+                        <?php
+                        echo "<img alt='Foto cuidador'
+                        src='getFoto.php?id=1'/>‌​";
+                        ?>
                     </div>
                     <div class="nombre col-md-6">
                         <h1>{{ Auth::user()->name }} {{
@@ -47,7 +48,7 @@
                     <ul class="nav nav-pills nav-stacked"
                     style='font-size:27px;'>
                         <li role="presentation" class="active">
-                            <a href="{{ url('users') }}">Contactos</a>
+                            <a href="{{ route('zonaPrivadaCuidador') }}">Contactos</a>
                         </li>
                         <li role="presentation">
                             <a href="#">Clases</a>

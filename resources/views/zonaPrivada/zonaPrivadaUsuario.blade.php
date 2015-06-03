@@ -23,9 +23,10 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-3">
-						<img alt="embedded image"
-						src="data:image/jpg;base64,{{ 
-						chunk_split(base64_encode(Auth::user()->foto)) }}">‌​
+                        <?php
+                        echo "<img alt='Foto Usuario'
+                        src='getFoto.php?id=1'/>‌​";
+                        ?>
 					</div>
 					<div class="nombre col-md-9">
 						<h1>
@@ -51,7 +52,7 @@
 					<ul class="nav nav-pills nav-stacked"
 					style='font-size:27px;'>
 						<li role="presentation" class="active">
-							<a href="{{ url('users') }}">
+							<a href="{{ route('zonaPrivadaUsuario') }}">
 								Contactos
 							</a>
 						</li>

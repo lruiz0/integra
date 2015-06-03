@@ -49,21 +49,20 @@
             </ul>
         </div>
     	<div id="logout">
-    
 				@if (Auth::guest())
 					<h1>Loginate!</h1><!--Esto no se muestra nunca-->
 				@else
                 <div>
-                    <p style="display:inline; float:right;">Bienvenido {{ Auth::user()->name }}</p>
-                    <a id="botonDeLogin" href="{{ url('/auth/logout') }}" class="buttonLogin hidden-xs"><span style="display:inline;" class="glyphicon glyphicon-off" aria-hidden="true"> </span></a>
+                    <p style="display:inline; float:right;">
+                        Bienvenido {{ Auth::user()->name }}
+                    </p>
+                    <a id="botonDeLogin" href="{{ url('/auth/logout') }}"
+                    class="buttonLogin hidden-xs">
+                        <span style="display:inline;"
+                        class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                    </a>
                 </div>
-                   
-                
-					
-					
-					
 				@endif
-		
     	</div>
         <div id="content">
             <div class="back col-md-6 hidden-xs">
@@ -102,10 +101,10 @@
                 <div class="item fav animated fadeIn customAnimated5">
                     <img src="images/bg_fav.png" alt="" width="199"
                     height="199" class="circle"/>
-                    @if(Auth::user()->tipo == "cuidador")
-                    <a href="{{ route('zonaPrivada2') }}" class="icon"></a>
+                    @if(Auth::user()->tipo == "Cuidador")
+                    <a href="{{ route('zonaPrivadaCuidador') }}" class="icon"></a>
                     @else
-                    <a href="{{ route('zonaPrivada') }}" class="icon"></a>
+                    <a href="{{ route('zonaPrivadaUsuario') }}" class="icon"></a>
                     @endif
                     <h2>Tu área</h2>
                 </div>
@@ -163,7 +162,7 @@
                     },5000,'easeOutBack');
                     $this.find('a:first,h2').removeClass('active');
                 }
-            );
+                );
             });
         </script>
         <script src="{{ asset('js/bootstrap.min.js') }}"></script>

@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers;
 
+use App\User;
 class JuegosController extends Controller {
 
     /*
@@ -102,12 +103,21 @@ class JuegosController extends Controller {
      *
      * @return Response
      */
-    public function zonaPrivada()
+    public function zonaPrivadaUsuario()
     {
-        return view('inicial.zonaPrivada');
+        $users=User::paginate();
+        
+        return view('zonaPrivada.zonaPrivadaUsuario', compact('users'));
     }
-    public function zonaPrivada2()
+    /**
+     * Muestra el area privada del cuidador loginado.
+     *
+     * @return Response
+     */
+    public function zonaPrivadaCuidador()
     {
-        return view('inicial.zonaPrivadaAdmin');
+        $users=User::paginate();
+        
+        return view('zonaPrivada.zonaPrivadaCuidador', compact('users'));
     }
 }
