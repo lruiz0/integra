@@ -7,24 +7,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
-<head lang="en">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>De compras</title>
-    <link rel="icon" href="{{ asset('img/favicon.bmp') }}"/>
-
-    <link rel="stylesheet" href="{{ asset('css/estilo_de_prueba.css') }}"/>
-
-    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/style_ir_de_compras.css') }}"/>
-    <link rel="stylesheet" href="{{ asset('css/estiloIntegra.css') }}"/>
-    <link href='http://fonts.googleapis.com/css?family=Poiret+One'
-    rel='stylesheet' type='text/css'> 
-
-
-</head>
+    <head lang="en">
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>De compras</title>
+        <link rel="icon" href="{{ asset('images/favicon.bmp') }}"/>
+        <link rel="stylesheet" href="{{ asset('css/estilo_de_prueba.css')
+        }}"/>
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet"/>
+        <link rel="stylesheet" href="{{ asset('css/style_ir_de_compras.css')
+        }}"/>
+        <link rel="stylesheet" href="{{ asset('css/estiloIntegra.css') }}"/>
+        <link href='http://fonts.googleapis.com/css?family=Poiret+One'
+        rel='stylesheet' type='text/css'/> 
+    </head>
     <body onload="cargarDinero(), cargarPreguntas()">
         <div class="optimalsort-task">
             <div class="task-header">
@@ -45,11 +42,9 @@
         </div>
         <div style="position:absolute;" class="center-block">
             <div id="hucha" class="droptarget" ></div>
-                <div id="cajaDestino" class="droptarget" onmouseout="cargarDinero()"></div>
-            
+                <div id="cajaDestino" class="droptarget"
+                onmouseout="cargarDinero()"></div>
         </div>
-                
-        
         </div>
         <p id="demo"></p>
         <div class="clear clearfix"></div>

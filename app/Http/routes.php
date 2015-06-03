@@ -46,10 +46,6 @@ Route::get('preguntas-lenguaje', [
     'as' => 'jLenguaje', 'uses' => 'JuegosController@preguntasLenguaje'
 ]);
 
-Route::get('candy-crack', [
-    'as' => 'jMemoriaCandyCrack', 'uses' => 'JuegosController@candyCrack'
-]);
-
 Route::get('memory', [
     'as' => 'jMemoriaMemory', 'uses' => 'JuegosController@memory'
 ]);
@@ -65,11 +61,6 @@ Route::get('tu-area2', [
     'as' => 'zonaPrivada2', 'uses' => 'JuegosController@zonaPrivada2'
 ]);
 
-Route::get('users', 
-    'UsersController@index'
-);
-
-
-
+Route::get('users', 'UsersController@index');
 Route::resource('users', 'UsersController');
 Route::controller('users', 'UsersController');

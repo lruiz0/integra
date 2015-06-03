@@ -80,15 +80,6 @@ class JuegosController extends Controller {
         return view('juegos.preguntas-lenguaje');
     }
     /**
-     * Muestra el juego lúdico Candy Crack.
-     *
-     * @return Response
-     */
-    public function candyCrack()
-    {
-        return view('juegos.candyCrack');
-    }
-    /**
      * Muestra el clásico juego de la memoria de emparejar.
      *
      * @return Response

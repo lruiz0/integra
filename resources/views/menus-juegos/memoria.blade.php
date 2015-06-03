@@ -42,20 +42,6 @@
                 <div class="mediaGame col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <div class="row">
                         <div class="col-md-7 col-lg-8">
-                            <a href="{{ route('jMemoriaCandyCrack') }}">
-                              <img  src="images/candyCrack.png" alt="..." >
-                            </a>
-                        </div>
-                        <div class=" col-md-5 col-lg-4">
-                            <h3 >Candy Crack</h3>
-                            <p>¡Une las casillas del mismo color y consigue 
-                                puntos! </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mediaGame col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <div class="row">
-                        <div class="col-md-7 col-lg-8">
                             <a href="{{ route('jMemoriaMemory') }}">
                               <img  src="images/memoria.png" alt="..." >
                             </a>
@@ -63,6 +49,20 @@
                         <div class=" col-md-5 col-lg-4">
                             <h3>Memory</h3>
                             <p>¡Encuentra los paneles del mismo color! </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mediaGame col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="row">
+                        <div class="col-md-7 col-lg-8">
+                            <a href="#">
+                              <img  src="images/niña1.jpeg" alt="..." >
+                            </a>
+                        </div>
+                        <div class=" col-md-5 col-lg-4">
+                            <h3>Juego del supermercado</h3>
+                            <p>¡Haz la compra en el super siguiendo la lista 
+                                sin equivocarte! </p>
                         </div>
                     </div>
                 </div>
