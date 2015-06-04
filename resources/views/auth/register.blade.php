@@ -102,7 +102,7 @@
                         Quieres subir una foto?
                     </label>
                     <input name="foto" type="file" id="exampleInputFile" 
-                    accept="image/*">
+                    accept="image/*"/>
                     <p class="help-block">
                         Para subir una foto de perfil haz click en browse.
                     </p>

@@ -22,9 +22,9 @@ class CreateUsersTable extends Migration {
 			$table->string('email')->unique();
 			$table->string('password', 60);
 			$table->string('tipo');
-			$table->string('mime')->nullable();
-			$table->string('nombre_archivo_original')->nullable();
-			$table->string('nombre_archivo')->nullable();
+			$table->string('mime')->default('image/jpeg');
+			$table->string('nombre_archivo_original')->default('images2.jpg');
+			$table->string('nombre_archivo')->default('phpHbJChM.jpg');
 			$table->rememberToken();
 			$table->timestamps();
 		});

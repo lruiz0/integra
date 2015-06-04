@@ -36,19 +36,31 @@ class Registrar implements RegistrarContract {
 	 */
 	public function create(array $data)
 	{
-		$file = $data['foto'];
-		$extension = $file->getClientOriginalExtension();
-		Storage::disk('local')->put($file->getFilename().'.'.$extension,  File::get($file));
+		if( isset($data['foto']) )
+		{
+			$file = $data['foto'];
+			$extension = $file->getClientOriginalExtension();
+			Storage::disk('local')->put($file->getFilename().'.'.$extension,  File::get($file));
+			$mimeType = $file->getClientMimeType();
+			$originalName = $file->getClientOriginalName();
+			$fileName = $file->getFilename().'.'.$extension;
+		}else
+		{
+			$mimeType = "image/jpeg";
+			$originalName = "images.jpg";
+			$fileName = "phpW988HX.jpg";
 
+		}
+		
 		return User::create([
 			'name' => $data['name'],
 			'apellidos' => $data['apellidos'],
 			'email' => $data['email'],
 			'password' => bcrypt($data['password']),
 			'tipo' => $data['tipo'],
-			'mime' => $file->getClientMimeType(),
-			'nombre_archivo_original' => $file->getClientOriginalName(),
-			'nombre_archivo' => $file->getFilename().'.'.$extension,
+			'mime' => $mimeType,
+			'nombre_archivo_original' => $originalName,
+			'nombre_archivo' => $fileName,
 		]);
 	}
 

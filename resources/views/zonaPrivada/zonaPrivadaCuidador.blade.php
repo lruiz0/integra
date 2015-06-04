@@ -23,7 +23,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-3">
-                        <img src="http://localhost/storage/app/{{ Auth::user()->nombre_archivo }}"
+                        <img src="../storage/app/{{ Auth::user()->nombre_archivo }}"
                         alt="Foto personal" class="img-responsive" />
                     </div>
                     <div class="nombre col-md-6">
@@ -91,20 +91,20 @@
                                 <th>Accion</th>
                               </tr>
                             </thead>
-                            @foreach($users as $usuario)
+                            @foreach(Auth::user()->amigos as $amigo)
                                 <!-- Table -->
                                 <tr>
                                     <td style="font-size:15px;">
-                                        {{ $usuario->name }}
+                                        {{ $amigo->name }}
                                     </td>
                                     <td>
-                                        {{ $usuario->apellidos }}
+                                        {{ $amigo->apellidos }}
                                     </td>
                                     <td>
-                                        {{ $usuario->email }}
+                                        {{ $amigo->email }}
                                     </td>
                                     <td>
-                                        {{ $usuario->tipo }}
+                                        {{ $amigo->tipo }}
                                     </td>
                                     <td>
                                         <button type='submit'
@@ -119,9 +119,6 @@
                 </div>
             </div>
         </div>
-        @foreach(Auth::user()->amigos as $i) 
-            <h3>{{ $i->id }}</h3>
-        @endforeach
         <footer class="volver">
             <a href="{{ route('/') }}">
                 <span id="flecha" class="glyphicon glyphicon-home"

@@ -6,7 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'CreateAmigoUsuarioTable' => $baseDir . '/database/migrations/2015_06_04_123758_create_amigo_usuario_table.php',
+    'AmigosTableSeeder' => $baseDir . '/database/seeds/AmigosTableSeeder.php',
     'CreateAmigosUsuariosTable' => $baseDir . '/database/migrations/2015_06_04_123844_create_amigos_usuarios_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreatePuntuacionesTable' => $baseDir . '/database/migrations/2015_06_04_120742_create_puntuaciones_table.php',
