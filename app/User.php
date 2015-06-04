@@ -33,4 +33,8 @@ CanResetPasswordContract {
 	 */
 	protected $hidden = ['password', 'remember_token'];
 
+	public function amigos()
+	{
+		return $this->belongsToMany('App\User','amigo_usuario', 'user_id', 'amigo_id')->withTimestamps();
+	}
 }

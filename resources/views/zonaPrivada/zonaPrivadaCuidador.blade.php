@@ -119,6 +119,9 @@
                 </div>
             </div>
         </div>
+        @foreach(Auth::user()->amigos as $i) 
+            <h3>{{ $i->id }}</h3>
+        @endforeach
         <footer class="volver">
             <a href="{{ route('/') }}">
                 <span id="flecha" class="glyphicon glyphicon-home"
