@@ -38,8 +38,8 @@
     <body>
         @if (count($errors) > 0)
             <div class="alert alert-danger">
-                <strong>Whoops!</strong> There were some problems with your
-                input.<br><br>
+                <strong>Whoops!</strong> Ha habido problemas con la
+                introducción de los datos.<br/><br/>
                 <ul>
                     @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
@@ -121,12 +121,12 @@
             </a>
         </footer>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src=
+        <script type="text/javascript" src=
         "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
         </script>
         <!-- Include all compiled plugins (below), or include individual
         files as needed -->
-        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
         <script>
         $('.volver').hover(
                 function(){

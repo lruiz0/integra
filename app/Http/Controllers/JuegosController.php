@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use App\User;
+use Illuminate\Http\Response;
 class JuegosController extends Controller {
 
     /*
@@ -105,8 +106,8 @@ class JuegosController extends Controller {
      */
     public function zonaPrivadaUsuario()
     {
-        $users=User::paginate();
-        
+        $users = User::paginate();
+        //dd($users);
         return view('zonaPrivada.zonaPrivadaUsuario', compact('users'));
     }
     /**
@@ -116,8 +117,8 @@ class JuegosController extends Controller {
      */
     public function zonaPrivadaCuidador()
     {
-        $users=User::paginate();
-        
+        $users = User::paginate();
+        //dd($users);
         return view('zonaPrivada.zonaPrivadaCuidador', compact('users'));
     }
 }

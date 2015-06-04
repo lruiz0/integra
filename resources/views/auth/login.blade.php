@@ -16,7 +16,6 @@
         <meta name="author" content="Integra corp."/>
         <link rel="icon" href="{{ asset('images/favicon.bmp') }}"/>
         <title>Integra</title>
-
         <!-- Fonts -->
         <link href='//fonts.googleapis.com/css?family=Roboto:400,300'
         rel='stylesheet' type='text/css'/>
@@ -44,7 +43,7 @@
     <body>
         @if (count($errors) > 0)
             <div class="alert alert-danger">
-                <strong>Whoops!</strong>Email o contraseña incorrectos
+                <strong>Whoops!</strong> Email o contraseña incorrectos
                 <br/><br/>
                 <ul>
                     @foreach ($errors->all() as $error)
@@ -97,11 +96,11 @@
             </form>
         </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src=
+        <script type="text/javascript" src=
         "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
         </script>
         <!-- Include all compiled plugins (below), or include individual
         files as needed -->
-        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
     </body>
 </html>

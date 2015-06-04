@@ -14,9 +14,9 @@ class UsersController extends Controller {
 	 */
 	public function index()
 	{
-		$users=User::paginate();
+		$users=User::pagination();
 		
-		return view('inicial.zonaPrivada', compact('users'));
+		return view('zonaPrivada.zonaPrivadaUsuario', compact('users'));
 	}
 
 	/**

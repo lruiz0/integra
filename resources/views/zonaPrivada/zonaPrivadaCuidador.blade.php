@@ -23,10 +23,8 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-3">
-                        <?php
-                        echo "<img alt='Foto cuidador'
-                        src='getFoto.php?id=1'/>‌​";
-                        ?>
+                        <img src="http://localhost/storage/app/{{ Auth::user()->nombre_archivo }}"
+                        alt="Foto personal" class="img-responsive" />
                     </div>
                     <div class="nombre col-md-6">
                         <h1>{{ Auth::user()->name }} {{
@@ -83,9 +81,6 @@
                                 </form>
                             </nav>
                         </div>
-                        <?php 
-                          if(isset($users)){
-                        ?>
                         <table class="table">
                             <thead>
                               <tr>
@@ -119,7 +114,7 @@
                                 </tr>
                             @endforeach
                         </table>
-                        <?php } ?>
+                        {!! $users->render() !!}
                     </div>
                 </div>
             </div>
@@ -130,8 +125,8 @@
                 aria-hidden="true"></span> Volver
             </a>
         </footer>
-        <script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
-        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
         <script>
             $('.volver').hover(
                   function(){

@@ -22,7 +22,9 @@ class CreateUsersTable extends Migration {
 			$table->string('email')->unique();
 			$table->string('password', 60);
 			$table->string('tipo');
-			$table->binary('foto')->nullable();
+			$table->string('mime')->nullable();
+			$table->string('nombre_archivo_original')->nullable();
+			$table->string('nombre_archivo')->nullable();
 			$table->rememberToken();
 			$table->timestamps();
 		});

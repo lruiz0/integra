@@ -3,6 +3,8 @@
 use App\User;
 use Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
 
 class Registrar implements RegistrarContract {
 
@@ -20,7 +22,9 @@ class Registrar implements RegistrarContract {
 			'email' => 'required|email|max:255|unique:users',
 			'password' => 'required|min:6',
 			'tipo' => 'required',
-			'foto' => '',
+			'mime' => '',
+			'nombre_archivo_original' => '',
+			'nombre_archivo' => '',
 		]);
 	}
 
@@ -32,13 +36,19 @@ class Registrar implements RegistrarContract {
 	 */
 	public function create(array $data)
 	{
+		$file = $data['foto'];
+		$extension = $file->getClientOriginalExtension();
+		Storage::disk('local')->put($file->getFilename().'.'.$extension,  File::get($file));
+
 		return User::create([
 			'name' => $data['name'],
 			'apellidos' => $data['apellidos'],
 			'email' => $data['email'],
 			'password' => bcrypt($data['password']),
 			'tipo' => $data['tipo'],
-			'foto' => $data['foto'],
+			'mime' => $file->getClientMimeType(),
+			'nombre_archivo_original' => $file->getClientOriginalName(),
+			'nombre_archivo' => $file->getFilename().'.'.$extension,
 		]);
 	}
 

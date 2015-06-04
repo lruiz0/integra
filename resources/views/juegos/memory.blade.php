@@ -13,9 +13,9 @@
         <link rel="stylesheet" href="{{
         asset('css/style_juego_de_memoria.css') }}" type="text/css"
         media="screen" />
-        <script language="JavaScript" src="{{ asset('js/jquery-2.1.3.js') }}">
+        <script type="text/javascript" language="JavaScript" src="{{ asset('js/jquery-2.1.3.js') }}">
         </script>
-        <script language="JavaScript" src="{{
+        <script type="text/javascript" language="JavaScript" src="{{
             asset('js/js_juego_de_memoria.js') }}"></script>
         <link rel="stylesheet" type="text/css" href="{{
         asset('css/lenguaje.css') }}">

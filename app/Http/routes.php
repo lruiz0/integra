@@ -65,3 +65,7 @@ Route::get('tu-area-cuidador', [
 Route::get('puntuaciones', [
     'as' => 'puntuaciones', 'uses' => 'JuegosController@puntuaciones'
 ]);
+
+Route::get('users', [
+    'as' => 'users', 'uses' => 'UsersController@index'
+]);
