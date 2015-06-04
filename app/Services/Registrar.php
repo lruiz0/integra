@@ -48,7 +48,7 @@ class Registrar implements RegistrarContract {
 		{
 			$mimeType = "image/jpeg";
 			$originalName = "images.jpg";
-			$fileName = "phpW988HX.jpg";
+			$fileName = "default-foto.jpg";
 
 		}
 		

@@ -83,6 +83,7 @@
         </script>
         <!-- Include all compiled plugins (below), or include individual files
         as needed -->
-        <script type="text/javascript" src="¨{{ asset('js/bootstrap.min.js') }}"></script>
+        <script type="text/javascript" src="{{
+            asset('js/bootstrap.min.js') }}"></script>
     </body>
 </html>
