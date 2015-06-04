@@ -23,8 +23,8 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-3">
-                        <img src="http://localhost/storage/app/{{ Auth::user()->nombre_archivo }}"
-                        alt="Foto personal" class="img-responsive" />
+                        <img src="../storage/app/{{
+                        Auth::user()->nombre_archivo }}" alt="Foto personal"/>
 					</div>
 					<div class="nombre col-md-9">
 						<h1>
@@ -36,12 +36,12 @@
 						</h3>
 						<h3>
 							<span style="color: #A8ADAC">
-								{{ Auth::user()->tipo}}
+								{{ Auth::user()->tipo }}
 							</span>
 						</h3>
 					</div>
 				</div>
-				<hr>
+				<hr/>
 			</div>
 		</header>
 		<div class='container-fluid contenedorCircular'>
@@ -126,8 +126,10 @@
 	        	aria-hidden="true"></span> Volver
 	        </a>
 	    </footer>
-		<script type="text/javascript" src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
-	    <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+		<script type="text/javascript" src="{{
+			asset('js/jquery-1.11.3.min.js') }}"></script>
+	    <script type="text/javascript" src="{{
+	    	asset('js/bootstrap.min.js') }}"></script>
 	    <script>
 	        $('.volver').hover(
                 function(){

@@ -23,21 +23,25 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-3">
-                        <img src="../storage/app/{{ Auth::user()->nombre_archivo }}"
-                        alt="Foto personal" class="img-responsive" />
+                        <img src="../storage/app/{{
+                        Auth::user()->nombre_archivo }}" alt="Foto personal"/>
                     </div>
                     <div class="nombre col-md-6">
-                        <h1>{{ Auth::user()->name }} {{
-                          Auth::user()->apellidos }}
+                        <h1>
+                            {{ Auth::user()->name }} {{
+                            Auth::user()->apellidos }}
                         </h1>
-                        <h3>{{ Auth::user()->email }}</h3>
                         <h3>
-                            <span style="color: #A8ADAC">{{Auth::user()->tipo
-                            }}</span>
+                            {{ Auth::user()->email }}
+                        </h3>
+                        <h3>
+                            <span style="color: #A8ADAC">
+                                {{ Auth::user()->tipo }}
+                            </span>
                         </h3>
                     </div>
                 </div>
-                <hr>
+                <hr/>
             </div>
         </header>
         <div class='container-fluid contenedorCircular'>
@@ -46,7 +50,9 @@
                     <ul class="nav nav-pills nav-stacked"
                     style='font-size:27px;'>
                         <li role="presentation" class="active">
-                            <a href="{{ route('zonaPrivadaCuidador') }}">Contactos</a>
+                            <a href="{{ route('zonaPrivadaCuidador') }}">
+                                Contactos
+                            </a>
                         </li>
                         <li role="presentation">
                             <a href="#">Clases</a>
@@ -75,21 +81,20 @@
                                     class="btn btn-default">
                                         <span
                                         class="glyphicon glyphicon-search"
-                                        aria-hidden="true">
-                                        </span>
+                                        aria-hidden="true"></span>
                                     </button>
                                 </form>
                             </nav>
                         </div>
                         <table class="table">
                             <thead>
-                              <tr>
-                                <th>Nombre</th>
-                                <th>Apellidos</th>
-                                <th>Email</th>
-                                <th>Tipo de usuario</th>
-                                <th>Accion</th>
-                              </tr>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Apellidos</th>
+                                    <th>Email</th>
+                                    <th>Tipo de usuario</th>
+                                    <th>Accion</th>
+                                </tr>
                             </thead>
                             @foreach(Auth::user()->amigos as $amigo)
                                 <!-- Table -->
@@ -125,8 +130,10 @@
                 aria-hidden="true"></span> Volver
             </a>
         </footer>
-        <script type="text/javascript" src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script type="text/javascript" src="{{
+            asset('js/jquery-1.11.3.min.js') }}"></script>
+        <script type="text/javascript" src="{{
+            asset('js/bootstrap.min.js') }}"></script>
         <script>
             $('.volver').hover(
                   function(){
