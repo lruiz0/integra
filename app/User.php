@@ -5,6 +5,9 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
+use Illuminate\Auth\UserInterface;
+use Illuminate\Auth\Reminders\RemindableInterface;
+use \Illuminate\Database\Eloquent\ModelNotFoundException;
 
 class User extends Model implements AuthenticatableContract,
 CanResetPasswordContract {
@@ -36,5 +39,13 @@ CanResetPasswordContract {
 	public function amigos()
 	{
 		return $this->belongsToMany('App\User','amigo_usuario', 'user_id', 'amigo_id')->withTimestamps();
+	}
+
+	public function scopeSearchfriend($query, $username){
+		if($username != ""){
+			return $query->where('name', $username);
+		}
+		
+
 	}
 }

@@ -67,5 +67,5 @@ Route::get('puntuaciones', [
 ]);
 
 Route::get('users', [
-    'as' => 'users', 'uses' => 'UsersController@index'
+    'as' => 'users', 'uses' => 'UsersController@show'
 ]);

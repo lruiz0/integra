@@ -70,10 +70,10 @@
                                 <p class='navbaar-text'>
                                   Consulta o Agrega contactos</p>
                                 <form class="navbar-form navbar-right"
-                                role="search" action="{{ url('users') }}"
+                                role="search" action="{{route('users')}}"
                                 method='get'>
                                     <div class="form-group">
-                                        <input type="text"
+                                        <input type="text" name="usuarioBusqueda"
                                         class="form-control"
                                         placeholder="Search">
                                     </div>
@@ -86,6 +86,7 @@
                                 </form>
                             </nav>
                         </div>
+                    
                         <table class="table">
                             <thead>
                                 <tr>
@@ -96,6 +97,31 @@
                                     <th>Accion</th>
                                 </tr>
                             </thead>
+                            @if (isset($resultBusqueda))
+                            @foreach($resultBusqueda as $result)
+
+                                <tr>
+                                    <td style="font-size:15px;">
+                                        {{ $result->name }}
+                                    </td>
+                                    <td>
+                                        {{ $result->apellidos }}
+                                    </td>
+                                    <td>
+                                        {{ $result->email }}
+                                    </td>
+                                    <td>
+                                        {{ $result->tipo }}
+                                    </td>
+                                    <td>
+                                        <button type='submit'
+                                        class="btn btn-primary botonRegistro">
+                                        Agregar a Contactos</button>
+                                    </td>
+                                </tr>
+                            @endforeach
+                            @else
+
                             @foreach(Auth::user()->amigos as $amigo)
                                 <!-- Table -->
                                 <tr>
@@ -118,8 +144,9 @@
                                     </td>
                                 </tr>
                             @endforeach
+                            @endif
                         </table>
-                        {!! $users->render() !!}
+                    
                     </div>
                 </div>
             </div>
